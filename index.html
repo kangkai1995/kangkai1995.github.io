@@ -49,13 +49,19 @@
   
 
   
+    
+      
+    
+
+    
+  
 
   
 
   
     
     
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
   
 
 
@@ -104,7 +110,7 @@
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
+      userId: 6286357556977731000,
       author: '博主'
     }
   };
@@ -129,7 +135,7 @@
   
   
     
-  
+ 
 
   <div class="container one-collumn sidebar-position-left 
    page-home 
@@ -175,16 +181,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-about">
           <a href="/about" rel="section">
             
@@ -211,6 +207,16 @@
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
             标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-guestbook">
+          <a href="/guestbook" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-quote-left"></i> <br />
+            
+            留言
           </a>
         </li>
       
@@ -246,9 +252,38 @@
 </nav>
 
  </div>
+
     </header>
 
+ 
+       <div id="idhyt-surprise-ball">
+  <div id="idhyt-surprise-ball-animation">
+
+    <!--xxxxxxx xxx xxxxx -->
+    <!--why you are here? -->
+    <span id="layer0Go" class="drag">a</span>
+    <span id="layer1Go" class="drag">r</span>
+    <span id="layer2Go" class="drag">e</span>
+    <span id="layer3Go" class="drag"> </span>
+    <span id="layer4Go" class="drag">y</span>
+    <span id="layer5Go" class="drag">o</span>
+    <span id="layer6Go" class="drag">u</span>
+    <span id="layer7Go" class="drag">k</span>
+    <span id="layer8Go" class="drag">a</span>
+    <span id="layer9Go" class="drag">i</span>
+    <span id="layer10Go" class="drag">k</span>
+    <span id="layer11Go" class="drag">a</span>
+    <span id="layer12Go" class="drag">n</span>
+    <span id="layer13Go" class="drag">g</span>
+    <span id="layer14Go" class="drag">?</span>
+    <span id="layer15Go" class="drag ball"></span>
+  </div>
+</div>
+   
+      
+
     <main id="main" class="main">
+
       <div class="main-inner">
         <div class="content-wrap">
           <div id="content" class="content">
@@ -329,15 +364,15 @@
           <hr>
 <p><strong>Dijkstra’s algorithm</strong></p>
 <h2 id="Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later"><a href="#Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later" class="headerlink" title="Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later."></a>Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.</h2><p>戴克斯特拉算法（英语：Dijkstra’s algorithm）是由荷兰计算机科学家艾兹赫尔·戴克斯特拉提出。迪科斯彻算法使用了广度优先搜索解决非负权有向图的单源最短路径问题，算法最终得到一个最短路径树。该算法常用于路由算法或者作为其他图算法的一个子模块。举例来说，如果图中的顶点表示城市，而边上的权重表示城市间开车行经的距离，该算法可以用来找到两个城市之间的最短路径。</p>
-<pre><code> 1  function Dijkstra(G, w, s)
- 2     for each vertex v in V[G]                        // 初始化
- 3           d[v] := infinity                                 // 將各點的已知最短距離先設成無窮大
- 4           previous[v] := undefined                         // 各点的已知最短路径上的前趋都未知
- 5     d[s] := 0                                              // 因为出发点到出发点间不需移动任何距离，所以可以直接将s到s的最小距离设为0
- 6     S := empty set
- 7     Q := set of all vertices
- 8     while Q is not an empty set                      // Dijkstra演算法主體
- 9           u := Extract_Min(Q)
+<pre><code>   function Dijkstra(G, w, s)
+      for each vertex v in V[G]                        // 初始化
+            d[v] := infinity                                 // 將各點的已知最短距離先設成無窮大
+            previous[v] := undefined                         // 各点的已知最短路径上的前趋都未知
+     d[s] := 0                                              // 因为出发点到出发点间不需移动任何距离，所以可以直接将s到s的最小距离设为0
+      S := empty set
+      Q := set of all vertices
+      while Q is not an empty set                      // Dijkstra演算法主體
+            u := Extract_Min(Q)
 10           S.append(u)
 11           for each edge outgoing from u as (u,v)
 12                  if d[v] &gt; d[u] + w(u,v)             // 拓展边（u,v）。w(u,v)为从u到v的路径长度。
@@ -543,11 +578,38 @@
           
             
               <span class="links-of-author-item">
-                <a href="http://www.zhihu.com/people/k.kang" target="_blank" title="zhihu">
+                <a href="http://github.com/kangkai1995" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                  Twitter
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.facebook.com/uestckk" target="_blank" title="Facebook">
+                  
+                    <i class="fa fa-fw fa-facebook"></i>
+                  
+                  Facebook
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/k.kang" target="_blank" title="知乎">
                   
                     <i class="fa fa-fw fa-globe"></i>
                   
-                  zhihu
+                  知乎
                 </a>
               </span>
             
@@ -558,6 +620,20 @@
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://mailto:kai.pro@outlook.com/" title="广告位招租 | Ad Space for Rent" target="_blank">广告位招租 | Ad Space for Rent</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
       </section>
@@ -693,6 +769,10 @@
   </script>
 
   
+    
+      
+      <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
+      <script src="/js/src/hook-duoshuo.js"></script>
     
   
 
