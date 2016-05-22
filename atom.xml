@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kai | Live</title>
+  <subtitle>Hello，it is kai&#39;s personal blog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-05-21T06:57:21.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>康凯</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dijkstra&#39;s algorithm</title>
+    <link href="http://yoursite.com/2016/05/19/Dijkstra-s-algorithm/"/>
+    <id>http://yoursite.com/2016/05/19/Dijkstra-s-algorithm/</id>
+    <published>2016-05-19T11:13:49.000Z</published>
+    <updated>2016-05-21T06:57:21.000Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Dijkstra’s algorithm&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot;&gt;&lt;a href=&quot;#Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot; class=&quot;headerlink&quot; title=&quot;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&quot;&gt;&lt;/a&gt;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&lt;/h2&gt;&lt;p&gt;戴克斯特拉算法（英语：Dijkstra’s algorithm）是由荷兰计算机科学家艾兹赫尔·戴克斯特拉提出。迪科斯彻算法使用了广度优先搜索解决非负权有向图的单源最短路径问题，算法最终得到一个最短路径树。该算法常用于路由算法或者作为其他图算法的一个子模块。举例来说，如果图中的顶点表示城市，而边上的权重表示城市间开车行经的距离，该算法可以用来找到两个城市之间的最短路径。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   function Dijkstra(G, w, s)
+      for each vertex v in V[G]                        // 初始化
+            d[v] := infinity                                 // 將各點的已知最短距離先設成無窮大
+            previous[v] := undefined                         // 各点的已知最短路径上的前趋都未知
+     d[s] := 0                                              // 因为出发点到出发点间不需移动任何距离，所以可以直接将s到s的最小距离设为0
+      S := empty set
+      Q := set of all vertices
+      while Q is not an empty set                      // Dijkstra演算法主體
+            u := Extract_Min(Q)
+10           S.append(u)
+11           for each edge outgoing from u as (u,v)
+12                  if d[v] &amp;gt; d[u] + w(u,v)             // 拓展边（u,v）。w(u,v)为从u到v的路径长度。
+13                        d[v] := d[u] + w(u,v)               // 更新路径长度到更小的那个和值。
+14                        previous[v] := u                    // 紀錄前趨頂點
+&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;该算法的输入包含了一个有权重的有向图 G，以及G中的一个来源顶点 S。我们以 V 表示 G 中所有顶点的集合。每一个图中的边，都是两个顶点所形成的有序元素对。(u, v) 表示从顶点 u 到 v 有路径相连。我们以 E 表示G中所有边的集合，而边的权重则由权重函数 w: E → [0, ∞] 定义。因此，w(u, v) 就是从顶点 u 到顶点 v 的非负权重（weight）。边的权重可以想像成两个顶点之间的距离。任两点间路径的权重，就是该路径上所有边的权重总和。已知有 V 中有顶点 s 及 t，Dijkstra 算法可以找到 s 到 t 的最低权重路径(例如，最短路径)。这个算法也可以在一个图中，找到从一个顶点 s 到任何其他顶点的最短路径。&lt;/p&gt;
+&lt;p&gt;最初的戴克斯特拉算法不采用最小优先级队列，时间复杂度是O(|V|^2)(其中|V|为图的顶点个数)。通过斐波那契堆实现的迪科斯彻算法时间复杂度是O(|E|+|V|\log|V|) (其中|E|是边数) （Fredman &amp;amp; Tarjan 1984）。对于不含负权的有向图，这是目前已知的最快的单源最短路径算法。&lt;/p&gt;
+&lt;p&gt;如果我们只对在 s 和 t 之间查找一条最短路径的话，我们可以在第9行添加条件如果满足 u = t 的话终止程序。&lt;/p&gt;
+&lt;p&gt;通过推导可知，为了记录最佳路径的轨迹，我们只需记录该路径上每个点的前趋，即可通过迭代来回溯出 s 到 t 的最短路径（当然，使用后继节点来存储亦可。但那需要修改代码）：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1 s := empty sequence 
+2 u := t
+3 while defined u                                        
+4       insert u to the beginning of S
+5       u := previous[u]      //previous数组即为上文中的p
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Dijkstra’s algorithm&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot;&gt;&lt;a href=&quot;#Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot; class=&quot;headerlink&quot; title=&quot;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&quot;&gt;&lt;/a&gt;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&lt;/h2&gt;&lt;p&gt;戴克斯特拉算法（英语：Dijkstra’s algorithm）是由荷兰计算机科学家艾兹赫尔·戴克斯特拉提出。迪科斯彻算法使用了广度优先搜索解决非负权有向图的单源最短路径问题，算法最终得到一个最短路径树。该算法常用于路由算法或者作为其他图算法的一个子模块。举例来说，如果图中的顶点表示城市，而边上的权重表示城市间开车行经的距离，该算法可以用来找到两个城市之间的最短路径。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   function Dijkstra(G, w, s)
+      for each vertex v in V[G]                        // 初始化
+            d[v] := infinity                                 // 將各點的已知最短距離先設成無窮大
+            previous[v] := undefined                         // 各点的已知最短路径上的前趋都未知
+     d[s] := 0                                              // 因为出发点到出发点间不需移动任何距离，所以可以直接将s到s的最小距离设为0
+      S := empty set
+      Q := set of all vertices
+      while Q is not an empty set                      // Dijkstra演算法主體
+            u := Extract_Min(Q)
+10           S.append(u)
+11           for each edge outgoing from u as (u,v)
+12                  if d[v] &amp;gt; d[u] + w(u,v)             // 拓展边（u,v）。w(u,v)为从u到v的路径长度。
+13                        d[v] := d[u] + w(u,v)               // 更新路径长度到更小的那个和值。
+14                        previous[v] := u                    // 紀錄前趨頂點
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+      <category term="code" scheme="http://yoursite.com/tags/code/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2016/05/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87%E3%80%90%E6%B5%8B%E8%AF%95%E7%94%A8%E3%80%91/"/>
+    <id>http://yoursite.com/2016/05/19/第一篇博文【测试用】/</id>
+    <published>2016-05-19T06:39:30.000Z</published>
+    <updated>2016-05-19T06:47:39.000Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;第一篇博文【测试用】&quot;&gt;&lt;a href=&quot;#第一篇博文【测试用】&quot; class=&quot;headerlink&quot; title=&quot;第一篇博文【测试用】&quot;&gt;&lt;/a&gt;第一篇博文【测试用】&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;冼星海：我们的幸福是以解放民族，解放人类为目的&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;第一篇博文【测试用】&quot;&gt;&lt;a href=&quot;#第一篇博文【测试用】&quot; class=&quot;headerlink&quot; title=&quot;第一篇博文【测试用】&quot;&gt;&lt;/a&gt;第一篇博文【测试用】&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;冼星海：我们的幸福是以解放民族，解放人类为目的&lt;/
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
