@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name = "viewport"
+	content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>五子棋（一个很蠢的AI相信我</title>
 	<link rel="stylesheet" type="text/css" href="./chess_files/css/style.css">
-	<title>五子棋 - 这个AI很蠢的相信我</title>
 </head>
 <body>
-	<div id="box">
-	<canvas id="chess" width="450px" height="450px"></canvas>
-	</div>
-	<script type="text/javascript" src="./chess_files/js/script1.js"></script>
-
-	<div id="light" class="white_content"> 
-    <p class="word">gg! 你输了哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</p>
-    <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'"> 
-    Close</a></div> 
-	<div id="fade" class="black_overlay"> </div> 
-
+	<button>重新开始</button>
+	<canvas id="chess" width="450" height="450"></canvas>
+	<!-- JS -->
+	<script type="text/javascript" src="./chess_files/js/jquery-3.0.0.min.js"></script>
+	<script type="text/javascript" src="./chess_files/layer/layer.js"></script>
+	<script type="text/javascript" src="./chess_files/js/Mobile.js"></script>
+	<script type="text/javascript" src="./chess_files/js/AI.js"></script>
+	<script type="text/javascript" src="./chess_files/js/script.js"></script>
 </body>
 </html>

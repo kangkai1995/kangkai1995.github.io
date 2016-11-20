@@ -1,229 +1,116 @@
-var chess = document.getElementById('chess');
-var content = chess.getContext('2d');
+// 初始数据，几种功能
 
-var self = true;
-var chessBoard = [];
-var over = false;
+// 初始数据
+var chess = $("#chess")[0];
+var context = chess.getContext("2d");
+var me = true;
+var chessBoard = []; //棋盘数据
+var newGame = $("button");
 
-//judge win
-var wins = [];
+// 初始化
+$(function() {
+	init();
+});
 
-// 赢法统计数组
-var selfWin = [];
-var aiWin = [];
+function init() {
+	// 初始化
+	me = true;
+	over = false;
+	// forMobile();
+	forMobile()
+	eachWins();			//	赢法计算清空
+	drawChessBoard();	//	初始化棋盘
+	checkChessBoard();	//	棋盘数据初始化
+}
 
-for (var i=0; i<15; i++) {
-	chessBoard[i] = [];
-	for(var j=0; j<15; j++){
-		chessBoard[i][j] = 0;
+newGame.click(function() {
+	init();
+});
+
+
+
+// 初始化 棋盘
+function drawChessBoard() {
+	context.clearRect(0, 0, container, container)
+	context.beginPath();
+
+	for (var i = 0; i < 15; i++) {
+		context.moveTo(cellSpace + i * cellWidth, cellSpace);
+		context.lineTo(cellSpace + i * cellWidth, container - cellSpace);
+		context.moveTo(cellSpace, cellSpace + i * cellWidth);
+		context.lineTo(container - cellSpace, cellSpace + i * cellWidth);
 	}
+
+
+	context.strokeStyle = "#bfbfbf";
+	context.stroke();
+	context.closePath();
 }
-
-for(var i =0; i <15 ;i++){
-	wins[i] = [];
-	for(var j=0; j<15; j++){
-		wins[i][j] = [];
-	}
-}
-
-var count = 0;
-//heng xian
-for(var i= 0; i<15; i++){
-	for(var j=0; j<11; j++){
-		for(var k=0; k<5; k++){
-			wins[i][j+k][count] = true;
-		}
-		count++;
-	}
-}
-//shu xian
-for(var i= 0; i<15; i++){
-	for(var j=0; j<11; j++){
-		for(var k=0; k<5; k++){
-			wins[j+k][i][count] = true;
-		}
-		count++;
-	}
-}
-
-//xie xian
-for(var i= 0; i<11; i++){
-	for(var j=0; j<11; j++){
-		for(var k=0; k<5; k++){
-			wins[i+k][j+k][count] = true;
-		}
-		count++;
-	}
-}
-
-//fan xie xian
-for(var i= 0; i<11; i++){
-	for(var j=14; j>3; j--){
-		for(var k=0; k<5; k++){
-			wins[i+k][j-k][count] = true;
-		}
-		count++;
-	}
-}
-
-for(var i=0; i<count; i++){
-	selfWin[i] = 0;
-	aiWin[i] = 0;
-}
-
-
-var drawBox = function() {
-	content.strokeStyle="#BFBFBF";
-	for(var i=0;i<15; i++){
-		//print vertical lines
-		content.moveTo(15 + i*30, 15);
-		content.lineTo(15 + i*30, 435);
-		content.stroke();
-	    //print horizontal lines
-	    content.moveTo(15, 15 + i*30);
-		content.lineTo(435, 15 + i*30);
-		content.stroke();
-	}
-}
-
-var oneStep = function  (i, j ,self) {
-	//print the circle chess pieces
-	content.beginPath();
-	content.arc(15 + i*30, 15 + j*30, 13, 0, 2 * Math.PI);
-	content.closePath();
-
-	var gradient = content.createRadialGradient(15 + i*30 + 2, 15 + j*30 -2 , 13, 15 + i*30 + 2, 15 + j*30 -2, 0);
-	if (self) {
-	gradient.addColorStop(0, "#0A0A0A");
-	gradient.addColorStop(1, "#636766");
+// 棋子
+function oneStep(i, j, me) {
+	context.beginPath();
+	// 画棋子
+	context.arc(cellSpace + i * cellWidth, cellSpace + j * cellWidth, cell, 2 * Math.PI, false);
+	// 渐变颜色
+	var gradient = context.createRadialGradient(cellSpace + i * cellWidth , cellSpace + j * cellWidth , cell, cellSpace + i * cellWidth , cellSpace + j * cellWidth , 0);
+	// 判断黑白
+	if (me) {
+		gradient.addColorStop(0, "#0a0a0a");
+		gradient.addColorStop(1, "#636766");
 	} else {
-	gradient.addColorStop(0, "#D1D1D1");
-	gradient.addColorStop(1, "#F9F9F9");
+		gradient.addColorStop(0, "#d1d1d1");
+		gradient.addColorStop(1, "#f9f9f9");
 	}
-	content.fillStyle = gradient;
-	content.fill();
+	// 设置颜色
+	context.fillStyle = gradient;
+	// 画
+	context.fill();
+	context.closePath();
+
 }
-
-drawBox();
-// oneStep(0, 0, true);
-// oneStep(1, 1, false);
-
+// 下棋
 chess.onclick = function(e) {
-	if(over || !self){
-		return;
-	}
+		// 结束了 或者 me=false 不执行
+		if (over || !me) {
+			return false;
+		}
+		// 找点
+		var x = e.offsetX;
+		var y = e.offsetY;
+		var i = Math.floor(x / cellWidth);
+		var j = Math.floor(y / cellWidth);
 
-	var x = e.offsetX;
-	var y = e.offsetY;
-	var i = Math.floor(x / 30);
-	var j = Math.floor(y / 30);
-	if(chessBoard[i][j] == 0 ){
-		oneStep(i, j, self);
-		chessBoard[i][j] = 1;
-
-		for(var k=0; k<count; k++){
-			if(wins[i][j][k]){
-				selfWin[k]++;		
-				if(selfWin[k] == 5){
-				window.alert("6666666 You Win!");
-				over = true;
-				}		
+		if (chessBoard[i][j] == 0) {
+			oneStep(i, j, me);
+			chessBoard[i][j] = 1;
+			// 落子之后各种计算
+			for (var k = 0; k < count; k++) {
+				if (wins[i][j][k]) {
+					myWin[k]++;
+					computerWin[k] = 999;
+					if (myWin[k] == 5) {
+						layer.msg('You Win', {
+							icon: 6,
+							time: 2000,
+							offset:[container/2] // 只定义top
+						});
+						over = true;
+					}
+				}
+			}
+			if (!over) {
+				me = !me;
+				computerAI();
 			}
 		}
-		
-		if(!over){
-			self = !self; 
-			AI();
+	}
+	// 初始化所有的点
+	// 0 表示此点可以落子
+function checkChessBoard() {
+	for (var i = 0; i < 15; i++) {
+		chessBoard[i] = [];
+		for (var j = 0; j < 15; j++) {
+			chessBoard[i][j] = 0;
 		}
 	}
 }
-
-var AI = function() {
-	var myScore = [];
-	var aiScore = [];
-	var max = 0;
-	var u = 0, v = 0;
-	for(var i=0; i<15; i++){
-		myScore[i] = [];
-		aiScore[i] = [];
-		for(var j=0; j<15; j++){
-			myScore[i][j] = 0;
-			aiScore[i][j] = 0;
-		}
-	}
-	for(var i=0; i<15; i++){
-		for(var j=0; j<15; j++){
-			if(chessBoard[i][j] == 0){
-				for(var k=0; k<count; k++){
-					if(wins[i][j][k]){
-						if(selfWin[k] == 1){
-							myScore[i][j] += 200;
-						} else if(selfWin[k] == 2){
-							myScore[i][j] += 400;
-						} else if(selfWin[k] == 3){
-							myScore[i][j] += 2000; 
-						} else if(selfWin[k] == 4){
-							myScore[i][j] += 10000;
-						}
-						if(aiWin[k] == 1){
-							aiScore[i][j] += 400;
-						} else if(aiWin[k] == 2){
-							aiScore[i][j] += 800;
-						} else if(aiWin[k] == 3){
-							aiScore[i][j] += 2000; 
-						} else if(aiWin[k] == 4){
-							aiScore[i][j] += 20000;
-						}
-					}
-				}
-				if(myScore[i][j] > max){
-					max = myScore[i][j];
-					u = i;
-					v = j;
-				} else if(myScore[i][j] == max){
-					if(aiScore[i][j] > aiScore[u][v]){
-						u = i;
-						v = j;	
-					}
-				}
-				if(aiScore[i][j] > max){
-					max = aiScore[i][j];
-					u = i;
-					v = j;
-				} else if(aiScore[i][j] == max){
-					if(myScore[i][j]  > myScore[u][v]){
-						u = i;
-						v = j;	
-					}
-				}		
-			}
-		}		
-	}
-	oneStep(u, v, false);
-	chessBoard[u][v] = 2;
-	for(var k=0; k<count; k++){
-		if(wins[u][v][k]){
-			aiWin[k]++;		
-			if(aiWin[k] == 5){
-			document.getElementById('light').style.display='block';
-			document.getElementById('fade').style.display='block';
-			over = true;
-			reStrat();
-			}		
-		}
-	}
-	if(!over){
-		self = !self; 
-	}
-
-}
-
-// window.onload = function(){
-// 	newGame();
-// 	drawBox();
-// }
-// var reStrat = function() {
-// 	self = true;
-// 	newGame();
-// 	drawBox();
-// }

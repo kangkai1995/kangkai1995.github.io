@@ -1,19 +1,12 @@
-canvas	{
-	display: block;
-	margin: 50px auto;
-	box-shadow: -2px -2px 2px #EFEFEF,5px 5px 5px #B9B9B9;
+canvas {
+  display: block;
+  margin: 50px auto;
+  box-shadow: -2px -2px 2px #efefef,5px 5px 5px #b9b9b9;
 }
- .black_overlay{  display: none;  
-  	position: absolute;  top: 0%;  
-  	left: 0%;  width: 100%;  height: 100%;  
-  	background-color: black;  z-index:1001;  -moz-opacity: 0.8;  
-  	opacity:.80;  filter: alpha(opacity=80);  }  
-.white_content {  display: none;  position: absolute;  
-  		top: 25%;  left: 25%;  width: 50%;  height: 50%;  
-  		padding: 16px;  border: 16px solid gray;  
-  		background-color: white;  z-index:1002;  overflow: auto; }
- .word {
- 	padding: auto;
- 	font-size: 40px;
- 	font-weight: bold;
+
+button {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin: 50px auto -40px;
 }
