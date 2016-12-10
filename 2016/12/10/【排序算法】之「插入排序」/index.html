@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hello,kai" />
+  <meta name="keywords" content="Sorting algorithm," />
 
 
 
@@ -92,15 +92,28 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kai | Live">
-<meta property="og:url" content="http://yoursite.com/archives/2016/05/index.html">
+<meta name="description" content="前言：在【排序算法】板块中，我将纳入几种主流的排序算法学习笔记，代码以C为主，可能还会涉及我较熟悉的JavaScript
+内容很基础，作为今后快速查阅的资料
+
+基本思想插入排序是排序算法的一种，它不改变原有的序列（数组），而是创建一个新的序列，在新序列上进行操作。
+基本思想是，将元素逐个添加到已经排序好的数组中去，同时要求，插入的元素必须在正确的位置，这样原来排序好的数组是仍然有序的。第i轮排序时">
+<meta property="og:type" content="article">
+<meta property="og:title" content="  【排序算法】之「插入排序」">
+<meta property="og:url" content="http://yoursite.com/2016/12/10/【排序算法】之「插入排序」/index.html">
 <meta property="og:site_name" content="Kai | Live">
-<meta property="og:description">
+<meta property="og:description" content="前言：在【排序算法】板块中，我将纳入几种主流的排序算法学习笔记，代码以C为主，可能还会涉及我较熟悉的JavaScript
+内容很基础，作为今后快速查阅的资料
+
+基本思想插入排序是排序算法的一种，它不改变原有的序列（数组），而是创建一个新的序列，在新序列上进行操作。
+基本思想是，将元素逐个添加到已经排序好的数组中去，同时要求，插入的元素必须在正确的位置，这样原来排序好的数组是仍然有序的。第i轮排序时">
+<meta property="og:updated_time" content="2016-12-10T12:49:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kai | Live">
-<meta name="twitter:description">
+<meta name="twitter:title" content="  【排序算法】之「插入排序」">
+<meta name="twitter:description" content="前言：在【排序算法】板块中，我将纳入几种主流的排序算法学习笔记，代码以C为主，可能还会涉及我较熟悉的JavaScript
+内容很基础，作为今后快速查阅的资料
+
+基本思想插入排序是排序算法的一种，它不改变原有的序列（数组），而是创建一个新的序列，在新序列上进行操作。
+基本思想是，将元素逐个添加到已经排序好的数组中去，同时要求，插入的元素必须在正确的位置，这样原来排序好的数组是仍然有序的。第i轮排序时">
 
 
 
@@ -118,7 +131,7 @@
   };
 </script>
 
-  <title> 归档 | Kai | Live </title>
+  <title>   【排序算法】之「插入排序」 | Kai | Live </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -139,7 +152,7 @@
     
  
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -265,103 +278,159 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 7 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                  【排序算法】之「插入排序」
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-10T19:01:34+08:00" content="2016-12-10">
+              2016-12-10
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/10/【排序算法】之「插入排序」/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/10/【排序算法】之「插入排序」/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <p><strong>前言：</strong>在【排序算法】板块中，我将纳入几种主流的排序算法学习笔记，代码以C为主，可能还会涉及我较熟悉的JavaScript</p>
+<p><em>内容很基础，作为今后快速查阅的资料</em></p>
+<hr>
+<h3 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h3><p>插入排序是排序算法的一种，它不改变原有的序列（数组），而是创建一个新的序列，在新序列上进行操作。</p>
+<p>基本思想是，将元素逐个添加到已经排序好的数组中去，同时要求，插入的元素必须在正确的位置，这样原来排序好的数组是仍然有序的。第i轮排序时，在前i个元素的子数组中插入第i+1个元素。直到所有元素都加入排序好数组。<strong>类似于打扑克牌的抓拍过程，每次抓一张新牌都将其插入到手里已经排好序的牌当中。</strong><br><a id="more"></a></p>
+<h3 id="相关性质总结"><a href="#相关性质总结" class="headerlink" title="相关性质总结"></a>相关性质总结</h3><ol>
+<li>时间复杂度：O(N平方),无论何种情况，要插入N个数首先必然要进行N轮操作，最坏情况下再交换N次，即N*N;</li>
+<li>空间复杂度：O（N），即存储N个数字的空间</li>
+<li>排序性质：插入排序是一种稳定的排序算法，不会改变原有序列中相同数字的顺序；均在内存中进行，为内部排序。</li>
+</ol>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line">#define N 8</span><br><span class="line">void insert_sort(int a[],int n);</span><br><span class="line">//插入排序实现,这里按从小到大排序</span><br><span class="line">void insert_sort(int a[],int n)//n为数组a的元素个数</span><br><span class="line">&#123;</span><br><span class="line">    //进行N-1轮插入过程</span><br><span class="line">    for(int i=1; i&lt;n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        //首先找到元素a[i]需要插入的位置</span><br><span class="line">        int j=0;</span><br><span class="line">        while( (a[j]&lt;a[i]) &amp;&amp; (j&lt;i) )</span><br><span class="line">        &#123;</span><br><span class="line">            //这里a[j]实际为新构造的排序后的数组，j即为插入位置</span><br><span class="line">            j++;</span><br><span class="line">        &#125;</span><br><span class="line">        //将元素插入到正确的位置</span><br><span class="line">        if(i != j)  //如果i==j，说明a[i]刚好在正确的位置</span><br><span class="line">        &#123;</span><br><span class="line">            int temp = a[i];</span><br><span class="line">            for(int k = i; k &gt; j; k--)</span><br><span class="line">            &#123;</span><br><span class="line">                a[k] = a[k-1];//将插入位置以后的数都后移一位</span><br><span class="line">            &#125;</span><br><span class="line">            a[j] = temp;//将数字插入位置j</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//测试 </span><br><span class="line">int  main()</span><br><span class="line">&#123;</span><br><span class="line">    int num[N] = &#123;89, 38, 11, 78, 96, 44, 19, 25&#125;;</span><br><span class="line">    insert_sort(num, N);</span><br><span class="line">    for(int i=0; i&lt;N; i++)</span><br><span class="line">        printf(&quot;%d  &quot;, num[i]);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">    system(&quot;pause&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>少一些套路，多一些真诚~</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="Kai.Kang WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
       
       
+    </div>
+  </div>
+
 
       
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Sorting-algorithm/" rel="tag">#Sorting algorithm</a>
+          
+        </div>
+      
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/22/博客上线小记/" itemprop="url">
-              
-                <span itemprop="name">博客上线小记</span>
-              
-            </a>
-        
-      </h1>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/22/博客上线小记/" rel="next" title="博客上线小记">
+                <i class="fa fa-chevron-left"></i> 博客上线小记
+              </a>
+            
+          </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-22T22:47:12+08:00"
-              content="2016-05-22" >
-          05-22
-        </time>
-      </div>
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/10/【排序算法】之「冒泡排序」/" rel="prev" title="  【排序算法】之「冒泡排序」">
+                  【排序算法】之「冒泡排序」 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/19/Dijkstra-s-algorithm/" itemprop="url">
-              
-                <span itemprop="name">Dijkstra's algorithm</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-19T19:13:49+08:00"
-              content="2016-05-19" >
-          05-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-
+    </div>
+  </div>
 
 
           </div>
@@ -369,6 +438,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/12/10/【排序算法】之「插入排序」/"
+           data-title="  【排序算法】之「插入排序」" data-url="http://yoursite.com/2016/12/10/【排序算法】之「插入排序」/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -388,8 +465,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -491,6 +577,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本思想"><span class="nav-number">1.</span> <span class="nav-text">基本思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关性质总结"><span class="nav-number">2.</span> <span class="nav-text">相关性质总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现"><span class="nav-number">3.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -594,11 +691,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   

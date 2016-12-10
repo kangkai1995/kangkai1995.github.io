@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hello,kai" />
+  <meta name="keywords" content="Sorting algorithm," />
 
 
 
@@ -92,15 +92,19 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kai | Live">
-<meta property="og:url" content="http://yoursite.com/archives/2016/05/index.html">
+<meta name="description" content="基本思想冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。
+这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。每一轮交换都换产生余下数组最大的数，并冒到顶部。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="  【排序算法】之「冒泡排序」">
+<meta property="og:url" content="http://yoursite.com/2016/12/10/【排序算法】之「冒泡排序」/index.html">
 <meta property="og:site_name" content="Kai | Live">
-<meta property="og:description">
+<meta property="og:description" content="基本思想冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。
+这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。每一轮交换都换产生余下数组最大的数，并冒到顶部。">
+<meta property="og:updated_time" content="2016-12-10T13:05:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kai | Live">
-<meta name="twitter:description">
+<meta name="twitter:title" content="  【排序算法】之「冒泡排序」">
+<meta name="twitter:description" content="基本思想冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。
+这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。每一轮交换都换产生余下数组最大的数，并冒到顶部。">
 
 
 
@@ -118,7 +122,7 @@
   };
 </script>
 
-  <title> 归档 | Kai | Live </title>
+  <title>   【排序算法】之「冒泡排序」 | Kai | Live </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -139,7 +143,7 @@
     
  
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -265,103 +269,159 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 7 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
 
-      
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                  【排序算法】之「冒泡排序」
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-10T20:46:34+08:00" content="2016-12-10">
+              2016-12-10
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/10/【排序算法】之「冒泡排序」/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/10/【排序算法】之「冒泡排序」/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
       
       
 
       
+        <hr>
+<h3 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h3><p>冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。</p>
+<p>这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。每一轮交换都换产生余下数组最大的数，并冒到顶部。<br><a id="more"></a></p>
+<h3 id="相关性质"><a href="#相关性质" class="headerlink" title="相关性质"></a>相关性质</h3><ol>
+<li>时间复杂度：O(N^2)，进行N-1轮操作，每次进行n-1次交换</li>
+<li>空间复杂度：O(N)</li>
+<li>排序性质：内部排序，稳定排序</li>
+</ol>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><p>先列出一种效率较低的方法<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line">int a[10] = &#123;1,4,3,5,23,2,45,6,3,5&#125;;</span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">      int i,j,mid;</span><br><span class="line">      int length = 10;</span><br><span class="line">      //开始外圈循环</span><br><span class="line">      for(i=0;i&lt;=9;i++)</span><br><span class="line">          //外圈循环到i时，说明该数组的后i-1个数已经排好序并且是最大值</span><br><span class="line">          for(j=0;j&lt;9-i;j++) </span><br><span class="line">          &#123;</span><br><span class="line">               if(a[j]&gt;=a[j+1])</span><br><span class="line">               &#123;</span><br><span class="line">                    mid = a[j];</span><br><span class="line">                    a[j] = a[j+1];</span><br><span class="line">                    a[j+1] = mid;</span><br><span class="line">               &#125;</span><br><span class="line">          &#125;</span><br><span class="line">     </span><br><span class="line">      for(i=0;i&lt;=9;i++)</span><br><span class="line">          printf(&quot;%d   &quot;,a[i]);</span><br><span class="line">      system(&quot;pause&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在这个冒泡排序算法中有一个缺陷，如果数组是 2 1 3 4 5 6 ，那么在第一次外圈结束后，该数组就已经完成排序，但是程序还是会继续循环下去，做很多无用的比较，但是根本不会出现数的位置的交换。++所以我们需要考虑一下冒泡排序的结束条件++。</p>
+<p>下面给出一个定义：如果冒泡排序在一次外圈的内圈循环中没有出现数的位置的交换，那么该数组排序完成，不需要向下进行。解释一下这个定义，内圈的循环是从0~length-i-1的，不出现交换说明在这个范围内后一个数都大于前一个数，而在length-i-1至lenth的范围中，本来就是符合条件的，所以定义成立。<br>所以我们添加一个flag标志，观察在每次外圈时是否出现数值的交换。<br>下面给出改进算法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line"></span><br><span class="line">int a[10] = &#123;1,4,3,5,23,2,45,6,3,5&#125;;</span><br><span class="line"></span><br><span class="line">main()</span><br><span class="line">&#123;</span><br><span class="line">      int i,j,mid;</span><br><span class="line">      int length = 10;</span><br><span class="line">      int flag = 1;   //标识符</span><br><span class="line">      </span><br><span class="line">      for(i=0;i&lt;=9 &amp;&amp; flag;i++)   //注意判定条件</span><br><span class="line">          for(j=0;j&lt;9-i;j++)</span><br><span class="line">          &#123;</span><br><span class="line">               flag=0;        //每次外圈时初始化</span><br><span class="line">               if(a[j] &gt;= a[j+1])</span><br><span class="line">               &#123;</span><br><span class="line">                    mid = a[j];</span><br><span class="line">                    a[j] = a[j+1];</span><br><span class="line">                    a[j+1] = mid;</span><br><span class="line">                    flag=1;      //如果有交换，那么可以进入下一圈循环</span><br><span class="line">               &#125;</span><br><span class="line">          &#125;</span><br><span class="line">      </span><br><span class="line">      for(i=0;i&lt;=9;i++)</span><br><span class="line">          printf(&quot;%d   &quot;,a[i]);</span><br><span class="line">      system(&quot;pause&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
         
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2016">2016</h2>
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>少一些套路，多一些真诚~</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="Kai.Kang WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
       
       
+    </div>
+  </div>
+
 
       
+    </div>
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Sorting-algorithm/" rel="tag">#Sorting algorithm</a>
+          
+        </div>
+      
 
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/22/博客上线小记/" itemprop="url">
-              
-                <span itemprop="name">博客上线小记</span>
-              
-            </a>
-        
-      </h1>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/10/【排序算法】之「插入排序」/" rel="next" title="  【排序算法】之「插入排序」">
+                <i class="fa fa-chevron-left"></i>   【排序算法】之「插入排序」
+              </a>
+            
+          </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-22T22:47:12+08:00"
-              content="2016-05-22" >
-          05-22
-        </time>
-      </div>
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/10/【排序算法】之「归并排序」/" rel="prev" title="  【排序算法】之「归并排序」">
+                  【排序算法】之「归并排序」 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
 
-    </header>
+      
+      
+    </footer>
   </article>
 
 
 
-    
-
+    <div class="post-spread">
       
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/05/19/Dijkstra-s-algorithm/" itemprop="url">
-              
-                <span itemprop="name">Dijkstra's algorithm</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-05-19T19:13:49+08:00"
-              content="2016-05-19" >
-          05-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
-
-  
-
+    </div>
+  </div>
 
 
           </div>
@@ -369,6 +429,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/12/10/【排序算法】之「冒泡排序」/"
+           data-title="  【排序算法】之「冒泡排序」" data-url="http://yoursite.com/2016/12/10/【排序算法】之「冒泡排序」/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -388,8 +456,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -491,6 +568,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本思想"><span class="nav-number">1.</span> <span class="nav-text">基本思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关性质"><span class="nav-number">2.</span> <span class="nav-text">相关性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现"><span class="nav-number">3.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -594,11 +682,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   

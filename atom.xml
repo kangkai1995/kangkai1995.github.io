@@ -1,26 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Kai | Live</title>
-  <subtitle>Hello，it is kai&#39;s personal blog</subtitle>
+  <subtitle>Welcome to my personal blog</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-22T15:28:22.000Z</updated>
+  <updated>2016-12-10T13:17:30.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>康凯</name>
+    <name>Kai.Kang</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的个人博客正式上线啦~</title>
-    <link href="http://yoursite.com/2016/05/22/%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%AD%A3%E5%BC%8F%E4%B8%8A%E7%BA%BF%E5%95%A6/"/>
-    <id>http://yoursite.com/2016/05/22/我的个人博客正式上线啦/</id>
+    <title>【js游戏】 之 「五子棋」</title>
+    <link href="http://yoursite.com/2016/12/10/%E3%80%90js%E6%B8%B8%E6%88%8F%E3%80%91%E4%B9%8B%E3%80%8C%E4%BA%94%E5%AD%90%E6%A3%8B%E3%80%8D/"/>
+    <id>http://yoursite.com/2016/12/10/【js游戏】之「五子棋」/</id>
+    <published>2016-12-10T13:14:22.000Z</published>
+    <updated>2016-12-10T13:17:30.000Z</updated>
+    
+    <content type="html">&lt;p&gt;用js撸了几个小游戏，比如五子棋（人机对战），有空写个详细的实现过程，不过代码注释已经写得比较详细了，直接审查元素就能看到。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这里直接上五子棋游戏传送门：&lt;br&gt;&lt;a href=&quot;http://www.kangkai.science/chess.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.kangkai.science/chess.html&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;用js撸了几个小游戏，比如五子棋（人机对战），有空写个详细的实现过程，不过代码注释已经写得比较详细了，直接审查元素就能看到。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这里直接上五子棋游戏传送门：&lt;br&gt;&lt;a href=&quot;http://www.kangkai.science/chess.ht
+    
+    </summary>
+    
+    
+      <category term="game" scheme="http://yoursite.com/tags/game/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>  【排序算法】之「快速排序」</title>
+    <link href="http://yoursite.com/2016/12/10/%E3%80%90%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E3%80%91%E4%B9%8B%E3%80%8C%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E3%80%8D/"/>
+    <id>http://yoursite.com/2016/12/10/【排序算法】之「快速排序」/</id>
+    <published>2016-12-10T12:55:34.000Z</published>
+    <updated>2016-12-10T13:06:27.000Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;快排简而言之就三步：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在数据集之中，选择一个元素作为”基准”（pivot）。&lt;/li&gt;
+&lt;li&gt;所有小于”基准”的元素，都移到”基准”的左边；所有大于”基准”的元素，都移到”基准”的右边。&lt;/li&gt;
+&lt;li&gt;对”基准”左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;相关性质&quot;&gt;&lt;a href=&quot;#相关性质&quot; class=&quot;headerlink&quot; title=&quot;相关性质&quot;&gt;&lt;/a&gt;相关性质&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;时间复杂度：O（nlogn）&lt;/li&gt;
+&lt;li&gt;空间复杂度：O（N）&lt;/li&gt;
+&lt;li&gt;排序性质：主要操作在源数据存储区进行，属于内部排序。不稳定排序。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;代码实现&quot;&gt;&lt;a href=&quot;#代码实现&quot; class=&quot;headerlink&quot; title=&quot;代码实现&quot;&gt;&lt;/a&gt;代码实现&lt;/h3&gt;&lt;p&gt;这里参照了阮一峰老师的JS 实现&lt;/p&gt;
+&lt;p&gt;定义一个quickSort函数，它的参数是一个数组。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var quickSort = function(arr) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后，检查数组的元素个数，如果小于等于1，就返回。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var quickSort = function(arr) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　if (arr.length &amp;lt;= 1) &amp;#123; return arr; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;接着，选择”基准”（pivot），并将其与原数组分离，再定义两个空数组，用来存放一左一右的两个子集。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var quickSort = function(arr) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　if (arr.length &amp;lt;= 1) &amp;#123; return arr; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var pivotIndex = Math.floor(arr.length / 2) ;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var pivot = arr.splice(pivotIndex, 1)[0];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var left = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var right = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后，开始遍历数组，小于”基准”的元素放入左边的子集，大于基准的元素放入右边的子集。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var quickSort = function(arr) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　if (arr.length &amp;lt;= 1) &amp;#123; return arr; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var pivotIndex = Math.floor(arr.length / 2) ;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var pivot = arr.splice(pivotIndex, 1)[0];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var left = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var right = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　for (var i = 0; i &amp;lt; arr.length; i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　　　if (arr[i] &amp;lt; pivot) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　　　　　left.push(arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　　　&amp;#125; else &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　　　　　right.push(arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　　　&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;最后，使用递归不断重复这个过程，就可以得到排序后的数组。&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;var quickSort = function(arr) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　if (arr.length &amp;lt;= 1) &amp;#123; return arr; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var pivotIndex = Math.floor(arr.length / 2);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var pivot = arr.splice(pivotIndex, 1)[0];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var left = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　var right = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　for (var i = 0; i &amp;lt; arr.length; i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　　　if (arr[i] &amp;lt; pivot) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　　　　　left.push(arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　　　&amp;#125; else &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　　　　　right.push(arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　　　&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;　　return quickSort(left).concat([pivot], quickSort(right));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;C语言版本：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;51&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#include &amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#define N 6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;int partition(int arr[], int low, int high)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    int key; //key即为基准&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    key = arr[low];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    while(low &amp;lt; high)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        while(low &amp;lt;high &amp;amp;&amp;amp; arr[high] &amp;gt;= key)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            high--;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        if(low&amp;lt;high)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        // 注意是先赋值后移动&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            arr[low++] = arr[high];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        while(low &amp;lt;high &amp;amp;&amp;amp; arr[low] &amp;lt;= key)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            low++;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        if(low&amp;lt;high)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            arr[high--] = arr[low];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    arr[low] = key;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return low;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;void quick_sort(int arr[], int start, int end)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    int pos;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if (start&amp;lt;end)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        pos = partition(arr, start, end);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        quick_sort(arr,start,pos-1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        quick_sort(arr,pos+1,end);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;int main(void)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    int i;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    int arr[N]=&amp;#123;32,12,7, 78, 23,45&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    printf(&amp;quot;排序前 \n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    for(i=0;i&amp;lt;N;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        printf(&amp;quot;%d\t&amp;quot;,arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    quick_sort(arr,0,N-1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    printf(&amp;quot;\n 排序后 \n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    for(i=0; i&amp;lt;N; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        printf(&amp;quot;%d\t&amp;quot;, arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    printf (&amp;quot;\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;快排简而言之就三步：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在数据集之中，选择一个元素作为”基准”（pivot）。&lt;/li&gt;
+&lt;li&gt;所有小于”基准”的元素，都移到”基准”的左边；所有大于”基准”的元素，都移到”基准”的右边。&lt;/li&gt;
+&lt;li&gt;对”基准”左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。
+    
+    </summary>
+    
+    
+      <category term="Sorting algorithm" scheme="http://yoursite.com/tags/Sorting-algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>  【排序算法】之「归并排序」</title>
+    <link href="http://yoursite.com/2016/12/10/%E3%80%90%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E3%80%91%E4%B9%8B%E3%80%8C%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F%E3%80%8D/"/>
+    <id>http://yoursite.com/2016/12/10/【排序算法】之「归并排序」/</id>
+    <published>2016-12-10T12:50:34.000Z</published>
+    <updated>2016-12-10T13:06:11.000Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;归并排序（MERGE-SORT）是建立在归并操作上的一种有效的排序算法,该算法是采用&lt;strong&gt;分治法&lt;/strong&gt;（Divide and Conquer）的一个非常典型的应用。不断将已有序的子序列合并，最后得到一个统一的有序序列。&lt;/p&gt;
+&lt;p&gt;归并操作(从小到大）的工作原理如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；&lt;/li&gt;
+&lt;li&gt;设定两个指针，最初位置分别为两个已经排序序列的起始位置；&lt;/li&gt;
+&lt;li&gt;比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并将该指针移动到下一位置（另一指向较大元素的指针位置不变）。&lt;/li&gt;
+&lt;li&gt;重复步骤3直到某一指针超出序列尾，将另一序列剩下的所有元素直接复制到合并序列尾&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;相关性质总结&quot;&gt;&lt;a href=&quot;#相关性质总结&quot; class=&quot;headerlink&quot; title=&quot;相关性质总结&quot;&gt;&lt;/a&gt;相关性质总结&lt;/h3&gt;&lt;/li&gt;
+&lt;li&gt;时间复杂度：O(n log n) ；&lt;/li&gt;
+&lt;li&gt;空间复杂度：O（N）；&lt;/li&gt;
+&lt;li&gt;排序性质：稳定&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;代码实现&quot;&gt;&lt;a href=&quot;#代码实现&quot; class=&quot;headerlink&quot; title=&quot;代码实现&quot;&gt;&lt;/a&gt;代码实现&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;48&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#include &amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;void Merge(int sourceArr[],int tempArr[], int startIndex, int midIndex, int endIndex)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//i 和 j分别指向两个有序数组的起始位置;k是排序后新数组的索引&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    int i = startIndex, j=midIndex+1, k = startIndex;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    while(i!=midIndex+1 &amp;amp;&amp;amp; j!=endIndex+1)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        if(sourceArr[i] &amp;gt; sourceArr[j])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        //tempArr为二路归并后的新数组&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            tempArr[k++] = sourceArr[j++];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        else&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            tempArr[k++] = sourceArr[i++];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    //剩下所有的元素都移到tempArr数组&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    while(i != midIndex+1)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        tempArr[k++] = sourceArr[i++];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    while(j != endIndex+1)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        tempArr[k++] = sourceArr[j++];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    for(i=startIndex; i&amp;lt;=endIndex; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        sourceArr[i] = tempArr[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//内部使用递归&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;void MergeSort(int sourceArr[], int tempArr[], int startIndex, int endIndex)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    int midIndex;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    if(startIndex &amp;lt; endIndex)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        midIndex = (startIndex + endIndex) / 2;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        MergeSort(sourceArr, tempArr, startIndex, midIndex);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        MergeSort(sourceArr, tempArr, midIndex+1, endIndex);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        //最后将两个有序数组合并&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        Merge(sourceArr, tempArr, startIndex, midIndex, endIndex);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;int main(int argc, char * argv[])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    int a[8] = &amp;#123;50, 10, 20, 30, 70, 40, 80, 60&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    int i, b[8];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    MergeSort(a, b, 0, 7);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    for(i=0; i&amp;lt;8; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        printf(&amp;quot;%d &amp;quot;, a[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    printf(&amp;quot;\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;```&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;归并排序（MERGE-SORT）是建立在归并操作上的一种有效的排序算法,该算法是采用&lt;strong&gt;分治法&lt;/strong&gt;（Divide and Conquer）的一个非常典型的应用。不断将已有序的子序列合并，最后得到一个统一的有序序列。&lt;/p&gt;
+&lt;p&gt;归并操作(从小到大）的工作原理如下：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；&lt;/li&gt;
+&lt;li&gt;设定两个指针，最初位置分别为两个已经排序序列的起始位置；&lt;/li&gt;
+&lt;li&gt;比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并将该指针移动到下一位置（另一指向较大元素的指针位置不变）。&lt;/li&gt;
+&lt;li&gt;重复步骤3直到某一指针超出序列尾，将另一序列剩下的所有元素直接复制到合并序列尾
+    
+    </summary>
+    
+    
+      <category term="Sorting algorithm" scheme="http://yoursite.com/tags/Sorting-algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>  【排序算法】之「冒泡排序」</title>
+    <link href="http://yoursite.com/2016/12/10/%E3%80%90%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E3%80%91%E4%B9%8B%E3%80%8C%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E3%80%8D/"/>
+    <id>http://yoursite.com/2016/12/10/【排序算法】之「冒泡排序」/</id>
+    <published>2016-12-10T12:46:34.000Z</published>
+    <updated>2016-12-10T13:05:58.000Z</updated>
+    
+    <content type="html">&lt;hr&gt;
+&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。&lt;/p&gt;
+&lt;p&gt;这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。每一轮交换都换产生余下数组最大的数，并冒到顶部。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;相关性质&quot;&gt;&lt;a href=&quot;#相关性质&quot; class=&quot;headerlink&quot; title=&quot;相关性质&quot;&gt;&lt;/a&gt;相关性质&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;时间复杂度：O(N^2)，进行N-1轮操作，每次进行n-1次交换&lt;/li&gt;
+&lt;li&gt;空间复杂度：O(N)&lt;/li&gt;
+&lt;li&gt;排序性质：内部排序，稳定排序&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;代码实现&quot;&gt;&lt;a href=&quot;#代码实现&quot; class=&quot;headerlink&quot; title=&quot;代码实现&quot;&gt;&lt;/a&gt;代码实现&lt;/h3&gt;&lt;p&gt;先列出一种效率较低的方法&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#include&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#include&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;int a[10] = &amp;#123;1,4,3,5,23,2,45,6,3,5&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;main()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      int i,j,mid;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      int length = 10;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      //开始外圈循环&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      for(i=0;i&amp;lt;=9;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          //外圈循环到i时，说明该数组的后i-1个数已经排好序并且是最大值&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          for(j=0;j&amp;lt;9-i;j++) &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               if(a[j]&amp;gt;=a[j+1])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    mid = a[j];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    a[j] = a[j+1];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    a[j+1] = mid;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;     &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      for(i=0;i&amp;lt;=9;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          printf(&amp;quot;%d   &amp;quot;,a[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      system(&amp;quot;pause&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在这个冒泡排序算法中有一个缺陷，如果数组是 2 1 3 4 5 6 ，那么在第一次外圈结束后，该数组就已经完成排序，但是程序还是会继续循环下去，做很多无用的比较，但是根本不会出现数的位置的交换。++所以我们需要考虑一下冒泡排序的结束条件++。&lt;/p&gt;
+&lt;p&gt;下面给出一个定义：如果冒泡排序在一次外圈的内圈循环中没有出现数的位置的交换，那么该数组排序完成，不需要向下进行。解释一下这个定义，内圈的循环是从0~length-i-1的，不出现交换说明在这个范围内后一个数都大于前一个数，而在length-i-1至lenth的范围中，本来就是符合条件的，所以定义成立。&lt;br&gt;所以我们添加一个flag标志，观察在每次外圈时是否出现数值的交换。&lt;br&gt;下面给出改进算法：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#include&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#include&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;int a[10] = &amp;#123;1,4,3,5,23,2,45,6,3,5&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;main()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      int i,j,mid;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      int length = 10;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      int flag = 1;   //标识符&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      for(i=0;i&amp;lt;=9 &amp;amp;&amp;amp; flag;i++)   //注意判定条件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          for(j=0;j&amp;lt;9-i;j++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               flag=0;        //每次外圈时初始化&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               if(a[j] &amp;gt;= a[j+1])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    mid = a[j];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    a[j] = a[j+1];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    a[j+1] = mid;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                    flag=1;      //如果有交换，那么可以进入下一圈循环&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;               &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      for(i=0;i&amp;lt;=9;i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;          printf(&amp;quot;%d   &amp;quot;,a[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;      system(&amp;quot;pause&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;hr&gt;
+&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。&lt;/p&gt;
+&lt;p&gt;这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。每一轮交换都换产生余下数组最大的数，并冒到顶部。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Sorting algorithm" scheme="http://yoursite.com/tags/Sorting-algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>  【排序算法】之「插入排序」</title>
+    <link href="http://yoursite.com/2016/12/10/%E3%80%90%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E3%80%91%E4%B9%8B%E3%80%8C%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F%E3%80%8D/"/>
+    <id>http://yoursite.com/2016/12/10/【排序算法】之「插入排序」/</id>
+    <published>2016-12-10T11:01:34.000Z</published>
+    <updated>2016-12-10T12:49:02.000Z</updated>
+    
+    <content type="html">&lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt;在【排序算法】板块中，我将纳入几种主流的排序算法学习笔记，代码以C为主，可能还会涉及我较熟悉的JavaScript&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;内容很基础，作为今后快速查阅的资料&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;插入排序是排序算法的一种，它不改变原有的序列（数组），而是创建一个新的序列，在新序列上进行操作。&lt;/p&gt;
+&lt;p&gt;基本思想是，将元素逐个添加到已经排序好的数组中去，同时要求，插入的元素必须在正确的位置，这样原来排序好的数组是仍然有序的。第i轮排序时，在前i个元素的子数组中插入第i+1个元素。直到所有元素都加入排序好数组。&lt;strong&gt;类似于打扑克牌的抓拍过程，每次抓一张新牌都将其插入到手里已经排好序的牌当中。&lt;/strong&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;相关性质总结&quot;&gt;&lt;a href=&quot;#相关性质总结&quot; class=&quot;headerlink&quot; title=&quot;相关性质总结&quot;&gt;&lt;/a&gt;相关性质总结&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;时间复杂度：O(N平方),无论何种情况，要插入N个数首先必然要进行N轮操作，最坏情况下再交换N次，即N*N;&lt;/li&gt;
+&lt;li&gt;空间复杂度：O（N），即存储N个数字的空间&lt;/li&gt;
+&lt;li&gt;排序性质：插入排序是一种稳定的排序算法，不会改变原有序列中相同数字的顺序；均在内存中进行，为内部排序。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;代码实现&quot;&gt;&lt;a href=&quot;#代码实现&quot; class=&quot;headerlink&quot; title=&quot;代码实现&quot;&gt;&lt;/a&gt;代码实现&lt;/h3&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;40&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#include&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#include&amp;lt;stdlib.h&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#define N 8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;void insert_sort(int a[],int n);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//插入排序实现,这里按从小到大排序&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;void insert_sort(int a[],int n)//n为数组a的元素个数&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    //进行N-1轮插入过程&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    for(int i=1; i&amp;lt;n; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        //首先找到元素a[i]需要插入的位置&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        int j=0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        while( (a[j]&amp;lt;a[i]) &amp;amp;&amp;amp; (j&amp;lt;i) )&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            //这里a[j]实际为新构造的排序后的数组，j即为插入位置&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            j++;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        //将元素插入到正确的位置&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        if(i != j)  //如果i==j，说明a[i]刚好在正确的位置&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            int temp = a[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            for(int k = i; k &amp;gt; j; k--)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                a[k] = a[k-1];//将插入位置以后的数都后移一位&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            a[j] = temp;//将数字插入位置j&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;//测试 &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;int  main()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    int num[N] = &amp;#123;89, 38, 11, 78, 96, 44, 19, 25&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    insert_sort(num, N);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    for(int i=0; i&amp;lt;N; i++)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        printf(&amp;quot;%d  &amp;quot;, num[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    printf(&amp;quot;\n&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    system(&amp;quot;pause&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    return 0;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt;在【排序算法】板块中，我将纳入几种主流的排序算法学习笔记，代码以C为主，可能还会涉及我较熟悉的JavaScript&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;内容很基础，作为今后快速查阅的资料&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;插入排序是排序算法的一种，它不改变原有的序列（数组），而是创建一个新的序列，在新序列上进行操作。&lt;/p&gt;
+&lt;p&gt;基本思想是，将元素逐个添加到已经排序好的数组中去，同时要求，插入的元素必须在正确的位置，这样原来排序好的数组是仍然有序的。第i轮排序时，在前i个元素的子数组中插入第i+1个元素。直到所有元素都加入排序好数组。&lt;strong&gt;类似于打扑克牌的抓拍过程，每次抓一张新牌都将其插入到手里已经排好序的牌当中。&lt;/strong&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Sorting algorithm" scheme="http://yoursite.com/tags/Sorting-algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客上线小记</title>
+    <link href="http://yoursite.com/2016/05/22/%E5%8D%9A%E5%AE%A2%E4%B8%8A%E7%BA%BF%E5%B0%8F%E8%AE%B0/"/>
+    <id>http://yoursite.com/2016/05/22/博客上线小记/</id>
     <published>2016-05-22T14:47:12.000Z</published>
-    <updated>2016-05-22T15:28:22.000Z</updated>
+    <updated>2016-12-10T13:08:49.000Z</updated>
     
     <content type="html">&lt;p&gt;&lt;del&gt;写在前面的屁话&lt;/del&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;好久没有碰工程项目啦！自从大二在工作室接外包做了几个项目之后，除了课程相关的代码，
@@ -64,7 +253,7 @@
     </summary>
     
     
-      <category term="日常" scheme="http://yoursite.com/tags/%E6%97%A5%E5%B8%B8/"/>
+      <category term="daily" scheme="http://yoursite.com/tags/daily/"/>
     
   </entry>
   
@@ -73,11 +262,11 @@
     <link href="http://yoursite.com/2016/05/19/Dijkstra-s-algorithm/"/>
     <id>http://yoursite.com/2016/05/19/Dijkstra-s-algorithm/</id>
     <published>2016-05-19T11:13:49.000Z</published>
-    <updated>2016-05-21T06:57:21.000Z</updated>
+    <updated>2016-12-10T12:32:33.000Z</updated>
     
     <content type="html">&lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Dijkstra’s algorithm&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot;&gt;&lt;a href=&quot;#Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot; class=&quot;headerlink&quot; title=&quot;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&quot;&gt;&lt;/a&gt;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&lt;/h2&gt;&lt;p&gt;戴克斯特拉算法（英语：Dijkstra’s algorithm）是由荷兰计算机科学家艾兹赫尔·戴克斯特拉提出。迪科斯彻算法使用了广度优先搜索解决非负权有向图的单源最短路径问题，算法最终得到一个最短路径树。该算法常用于路由算法或者作为其他图算法的一个子模块。举例来说，如果图中的顶点表示城市，而边上的权重表示城市间开车行经的距离，该算法可以用来找到两个城市之间的最短路径。&lt;/p&gt;
+&lt;h2 id=&quot;Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot;&gt;&lt;a href=&quot;#Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot; class=&quot;headerlink&quot; title=&quot;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&quot;&gt;&lt;/a&gt;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&lt;/h2&gt;&lt;p&gt;戴克斯特拉算法（英语：Dijkstra’s algorithm）是由荷兰计算机科学家艾兹赫尔·戴克斯特拉提出。迪科斯彻算法使用了广度优先搜索解决非负权有向图的单源最短路径问题，算法最终得到一个最短路径树。该算法常用于路由算法或者作为其他图算法的一个子模块。举例来说，如果图中的顶点表示城市，而边上的权重表示城市间开车行经的距离，该算法可以用来找到两个城市之间的最短路径。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;   function Dijkstra(G, w, s)
       for each vertex v in V[G]                        // 初始化
             d[v] := infinity                                 // 將各點的已知最短距離先設成無窮大
@@ -92,8 +281,7 @@
 12                  if d[v] &amp;gt; d[u] + w(u,v)             // 拓展边（u,v）。w(u,v)为从u到v的路径长度。
 13                        d[v] := d[u] + w(u,v)               // 更新路径长度到更小的那个和值。
 14                        previous[v] := u                    // 紀錄前趨頂點
-&lt;/code&gt;&lt;/pre&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;该算法的输入包含了一个有权重的有向图 G，以及G中的一个来源顶点 S。我们以 V 表示 G 中所有顶点的集合。每一个图中的边，都是两个顶点所形成的有序元素对。(u, v) 表示从顶点 u 到 v 有路径相连。我们以 E 表示G中所有边的集合，而边的权重则由权重函数 w: E → [0, ∞] 定义。因此，w(u, v) 就是从顶点 u 到顶点 v 的非负权重（weight）。边的权重可以想像成两个顶点之间的距离。任两点间路径的权重，就是该路径上所有边的权重总和。已知有 V 中有顶点 s 及 t，Dijkstra 算法可以找到 s 到 t 的最低权重路径(例如，最短路径)。这个算法也可以在一个图中，找到从一个顶点 s 到任何其他顶点的最短路径。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;该算法的输入包含了一个有权重的有向图 G，以及G中的一个来源顶点 S。我们以 V 表示 G 中所有顶点的集合。每一个图中的边，都是两个顶点所形成的有序元素对。(u, v) 表示从顶点 u 到 v 有路径相连。我们以 E 表示G中所有边的集合，而边的权重则由权重函数 w: E → [0, ∞] 定义。因此，w(u, v) 就是从顶点 u 到顶点 v 的非负权重（weight）。边的权重可以想像成两个顶点之间的距离。任两点间路径的权重，就是该路径上所有边的权重总和。已知有 V 中有顶点 s 及 t，Dijkstra 算法可以找到 s 到 t 的最低权重路径(例如，最短路径)。这个算法也可以在一个图中，找到从一个顶点 s 到任何其他顶点的最短路径。&lt;/p&gt;
 &lt;p&gt;最初的戴克斯特拉算法不采用最小优先级队列，时间复杂度是O(|V|^2)(其中|V|为图的顶点个数)。通过斐波那契堆实现的迪科斯彻算法时间复杂度是O(|E|+|V|\log|V|) (其中|E|是边数) （Fredman &amp;amp; Tarjan 1984）。对于不含负权的有向图，这是目前已知的最快的单源最短路径算法。&lt;/p&gt;
 &lt;p&gt;如果我们只对在 s 和 t 之间查找一条最短路径的话，我们可以在第9行添加条件如果满足 u = t 的话终止程序。&lt;/p&gt;
 &lt;p&gt;通过推导可知，为了记录最佳路径的轨迹，我们只需记录该路径上每个点的前趋，即可通过迭代来回溯出 s 到 t 的最短路径（当然，使用后继节点来存储亦可。但那需要修改代码）：&lt;/p&gt;
@@ -108,49 +296,12 @@
     
       &lt;hr&gt;
 &lt;p&gt;&lt;strong&gt;Dijkstra’s algorithm&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&quot;Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot;&gt;&lt;a href=&quot;#Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot; class=&quot;headerlink&quot; title=&quot;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&quot;&gt;&lt;/a&gt;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&lt;/h2&gt;&lt;p&gt;戴克斯特拉算法（英语：Dijkstra’s algorithm）是由荷兰计算机科学家艾兹赫尔·戴克斯特拉提出。迪科斯彻算法使用了广度优先搜索解决非负权有向图的单源最短路径问题，算法最终得到一个最短路径树。该算法常用于路由算法或者作为其他图算法的一个子模块。举例来说，如果图中的顶点表示城市，而边上的权重表示城市间开车行经的距离，该算法可以用来找到两个城市之间的最短路径。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;   function Dijkstra(G, w, s)
-      for each vertex v in V[G]                        // 初始化
-            d[v] := infinity                                 // 將各點的已知最短距離先設成無窮大
-            previous[v] := undefined                         // 各点的已知最短路径上的前趋都未知
-     d[s] := 0                                              // 因为出发点到出发点间不需移动任何距离，所以可以直接将s到s的最小距离设为0
-      S := empty set
-      Q := set of all vertices
-      while Q is not an empty set                      // Dijkstra演算法主體
-            u := Extract_Min(Q)
-10           S.append(u)
-11           for each edge outgoing from u as (u,v)
-12                  if d[v] &amp;gt; d[u] + w(u,v)             // 拓展边（u,v）。w(u,v)为从u到v的路径长度。
-13                        d[v] := d[u] + w(u,v)               // 更新路径长度到更小的那个和值。
-14                        previous[v] := u                    // 紀錄前趨頂點
-&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot;&gt;&lt;a href=&quot;#Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later&quot; class=&quot;headerlink&quot; title=&quot;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&quot;&gt;&lt;/a&gt;Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.&lt;/h2&gt;&lt;p&gt;戴克斯特拉算法（英语：Dijkstra’s algorithm）是由荷兰计算机科学家艾兹赫尔·戴克斯特拉提出。迪科斯彻算法使用了广度优先搜索解决非负权有向图的单源最短路径问题，算法最终得到一个最短路径树。该算法常用于路由算法或者作为其他图算法的一个子模块。举例来说，如果图中的顶点表示城市，而边上的权重表示城市间开车行经的距离，该算法可以用来找到两个城市之间的最短路径。&lt;br&gt;
     
     </summary>
     
     
       <category term="code" scheme="http://yoursite.com/tags/code/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/2016/05/19/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E6%96%87%E3%80%90%E6%B5%8B%E8%AF%95%E7%94%A8%E3%80%91/"/>
-    <id>http://yoursite.com/2016/05/19/第一篇博文【测试用】/</id>
-    <published>2016-05-19T06:39:30.000Z</published>
-    <updated>2016-05-19T06:47:39.000Z</updated>
-    
-    <content type="html">&lt;h1 id=&quot;第一篇博文【测试用】&quot;&gt;&lt;a href=&quot;#第一篇博文【测试用】&quot; class=&quot;headerlink&quot; title=&quot;第一篇博文【测试用】&quot;&gt;&lt;/a&gt;第一篇博文【测试用】&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;冼星海：我们的幸福是以解放民族，解放人类为目的&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;第一篇博文【测试用】&quot;&gt;&lt;a href=&quot;#第一篇博文【测试用】&quot; class=&quot;headerlink&quot; title=&quot;第一篇博文【测试用】&quot;&gt;&lt;/a&gt;第一篇博文【测试用】&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;冼星海：我们的幸福是以解放民族，解放人类为目的&lt;/
-    
-    </summary>
-    
     
   </entry>
   

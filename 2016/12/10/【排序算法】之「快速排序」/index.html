@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="code," />
+  <meta name="keywords" content="Sorting algorithm," />
 
 
 
@@ -92,19 +92,28 @@
 
 
 
-<meta name="description" content="Dijkstra’s algorithm
-Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scient">
+<meta name="description" content="基本思想快排简而言之就三步：
+
+在数据集之中，选择一个元素作为”基准”（pivot）。
+所有小于”基准”的元素，都移到”基准”的左边；所有大于”基准”的元素，都移到”基准”的右边。
+对”基准”左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Dijkstra's algorithm">
-<meta property="og:url" content="http://yoursite.com/2016/05/19/Dijkstra-s-algorithm/index.html">
+<meta property="og:title" content="  【排序算法】之「快速排序」">
+<meta property="og:url" content="http://yoursite.com/2016/12/10/【排序算法】之「快速排序」/index.html">
 <meta property="og:site_name" content="Kai | Live">
-<meta property="og:description" content="Dijkstra’s algorithm
-Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scient">
-<meta property="og:updated_time" content="2016-12-10T12:32:33.000Z">
+<meta property="og:description" content="基本思想快排简而言之就三步：
+
+在数据集之中，选择一个元素作为”基准”（pivot）。
+所有小于”基准”的元素，都移到”基准”的左边；所有大于”基准”的元素，都移到”基准”的右边。
+对”基准”左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。">
+<meta property="og:updated_time" content="2016-12-10T13:06:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Dijkstra's algorithm">
-<meta name="twitter:description" content="Dijkstra’s algorithm
-Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scient">
+<meta name="twitter:title" content="  【排序算法】之「快速排序」">
+<meta name="twitter:description" content="基本思想快排简而言之就三步：
+
+在数据集之中，选择一个元素作为”基准”（pivot）。
+所有小于”基准”的元素，都移到”基准”的左边；所有大于”基准”的元素，都移到”基准”的右边。
+对”基准”左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。">
 
 
 
@@ -122,7 +131,7 @@ Dijkstra’s algorithm is an algorithm for finding the shortest paths between no
   };
 </script>
 
-  <title> Dijkstra's algorithm | Kai | Live </title>
+  <title>   【排序算法】之「快速排序」 | Kai | Live </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -290,7 +299,7 @@ Dijkstra’s algorithm is an algorithm for finding the shortest paths between no
             
             
               
-                Dijkstra's algorithm
+                  【排序算法】之「快速排序」
               
             
           </h1>
@@ -302,8 +311,8 @@ Dijkstra’s algorithm is an algorithm for finding the shortest paths between no
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-19T19:13:49+08:00" content="2016-05-19">
-              2016-05-19
+            <time itemprop="dateCreated" datetime="2016-12-10T20:55:34+08:00" content="2016-12-10">
+              2016-12-10
             </time>
           </span>
 
@@ -313,8 +322,8 @@ Dijkstra’s algorithm is an algorithm for finding the shortest paths between no
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/19/Dijkstra-s-algorithm/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/19/Dijkstra-s-algorithm/" itemprop="commentsCount"></span>
+                <a href="/2016/12/10/【排序算法】之「快速排序」/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/10/【排序算法】之「快速排序」/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -338,32 +347,33 @@ Dijkstra’s algorithm is an algorithm for finding the shortest paths between no
 
       
         <hr>
-<p><strong>Dijkstra’s algorithm</strong></p>
-<h2 id="Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later"><a href="#Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later" class="headerlink" title="Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later."></a>Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.</h2><p>戴克斯特拉算法（英语：Dijkstra’s algorithm）是由荷兰计算机科学家艾兹赫尔·戴克斯特拉提出。迪科斯彻算法使用了广度优先搜索解决非负权有向图的单源最短路径问题，算法最终得到一个最短路径树。该算法常用于路由算法或者作为其他图算法的一个子模块。举例来说，如果图中的顶点表示城市，而边上的权重表示城市间开车行经的距离，该算法可以用来找到两个城市之间的最短路径。<br><a id="more"></a></p>
-<pre><code>   function Dijkstra(G, w, s)
-      for each vertex v in V[G]                        // 初始化
-            d[v] := infinity                                 // 將各點的已知最短距離先設成無窮大
-            previous[v] := undefined                         // 各点的已知最短路径上的前趋都未知
-     d[s] := 0                                              // 因为出发点到出发点间不需移动任何距离，所以可以直接将s到s的最小距离设为0
-      S := empty set
-      Q := set of all vertices
-      while Q is not an empty set                      // Dijkstra演算法主體
-            u := Extract_Min(Q)
-10           S.append(u)
-11           for each edge outgoing from u as (u,v)
-12                  if d[v] &gt; d[u] + w(u,v)             // 拓展边（u,v）。w(u,v)为从u到v的路径长度。
-13                        d[v] := d[u] + w(u,v)               // 更新路径长度到更小的那个和值。
-14                        previous[v] := u                    // 紀錄前趨頂點
-</code></pre><p>该算法的输入包含了一个有权重的有向图 G，以及G中的一个来源顶点 S。我们以 V 表示 G 中所有顶点的集合。每一个图中的边，都是两个顶点所形成的有序元素对。(u, v) 表示从顶点 u 到 v 有路径相连。我们以 E 表示G中所有边的集合，而边的权重则由权重函数 w: E → [0, ∞] 定义。因此，w(u, v) 就是从顶点 u 到顶点 v 的非负权重（weight）。边的权重可以想像成两个顶点之间的距离。任两点间路径的权重，就是该路径上所有边的权重总和。已知有 V 中有顶点 s 及 t，Dijkstra 算法可以找到 s 到 t 的最低权重路径(例如，最短路径)。这个算法也可以在一个图中，找到从一个顶点 s 到任何其他顶点的最短路径。</p>
-<p>最初的戴克斯特拉算法不采用最小优先级队列，时间复杂度是O(|V|^2)(其中|V|为图的顶点个数)。通过斐波那契堆实现的迪科斯彻算法时间复杂度是O(|E|+|V|\log|V|) (其中|E|是边数) （Fredman &amp; Tarjan 1984）。对于不含负权的有向图，这是目前已知的最快的单源最短路径算法。</p>
-<p>如果我们只对在 s 和 t 之间查找一条最短路径的话，我们可以在第9行添加条件如果满足 u = t 的话终止程序。</p>
-<p>通过推导可知，为了记录最佳路径的轨迹，我们只需记录该路径上每个点的前趋，即可通过迭代来回溯出 s 到 t 的最短路径（当然，使用后继节点来存储亦可。但那需要修改代码）：</p>
-<pre><code>1 s := empty sequence 
-2 u := t
-3 while defined u                                        
-4       insert u to the beginning of S
-5       u := previous[u]      //previous数组即为上文中的p
-</code></pre>
+<h3 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h3><p>快排简而言之就三步：</p>
+<ol>
+<li>在数据集之中，选择一个元素作为”基准”（pivot）。</li>
+<li>所有小于”基准”的元素，都移到”基准”的左边；所有大于”基准”的元素，都移到”基准”的右边。</li>
+<li>对”基准”左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。<a id="more"></a>
+</li>
+</ol>
+<h3 id="相关性质"><a href="#相关性质" class="headerlink" title="相关性质"></a>相关性质</h3><ol>
+<li>时间复杂度：O（nlogn）</li>
+<li>空间复杂度：O（N）</li>
+<li>排序性质：主要操作在源数据存储区进行，属于内部排序。不稳定排序。</li>
+</ol>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><p>这里参照了阮一峰老师的JS 实现</p>
+<p>定义一个quickSort函数，它的参数是一个数组。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var quickSort = function(arr) &#123;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>然后，检查数组的元素个数，如果小于等于1，就返回。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var quickSort = function(arr) &#123;</span><br><span class="line">　　if (arr.length &lt;= 1) &#123; return arr; &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>接着，选择”基准”（pivot），并将其与原数组分离，再定义两个空数组，用来存放一左一右的两个子集。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var quickSort = function(arr) &#123;</span><br><span class="line">　　if (arr.length &lt;= 1) &#123; return arr; &#125;</span><br><span class="line">　　var pivotIndex = Math.floor(arr.length / 2) ;</span><br><span class="line">　　var pivot = arr.splice(pivotIndex, 1)[0];</span><br><span class="line">　　var left = [];</span><br><span class="line">　　var right = [];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>然后，开始遍历数组，小于”基准”的元素放入左边的子集，大于基准的元素放入右边的子集。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">var quickSort = function(arr) &#123;</span><br><span class="line">　　if (arr.length &lt;= 1) &#123; return arr; &#125;</span><br><span class="line">　　var pivotIndex = Math.floor(arr.length / 2) ;</span><br><span class="line">　　var pivot = arr.splice(pivotIndex, 1)[0];</span><br><span class="line">　　var left = [];</span><br><span class="line">　　var right = [];</span><br><span class="line">　　for (var i = 0; i &lt; arr.length; i++)&#123;</span><br><span class="line">　　　　if (arr[i] &lt; pivot) &#123;</span><br><span class="line">　　　　　　left.push(arr[i]);</span><br><span class="line">　　　　&#125; else &#123;</span><br><span class="line">　　　　　　right.push(arr[i]);</span><br><span class="line">　　　　&#125;</span><br><span class="line">　　&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>最后，使用递归不断重复这个过程，就可以得到排序后的数组。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var quickSort = function(arr) &#123;</span><br><span class="line">　　if (arr.length &lt;= 1) &#123; return arr; &#125;</span><br><span class="line">　　var pivotIndex = Math.floor(arr.length / 2);</span><br><span class="line">　　var pivot = arr.splice(pivotIndex, 1)[0];</span><br><span class="line">　　var left = [];</span><br><span class="line">　　var right = [];</span><br><span class="line">　　for (var i = 0; i &lt; arr.length; i++)&#123;</span><br><span class="line">　　　　if (arr[i] &lt; pivot) &#123;</span><br><span class="line">　　　　　　left.push(arr[i]);</span><br><span class="line">　　　　&#125; else &#123;</span><br><span class="line">　　　　　　right.push(arr[i]);</span><br><span class="line">　　　　&#125;</span><br><span class="line">　　&#125;</span><br><span class="line">　　return quickSort(left).concat([pivot], quickSort(right));</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<hr>
+<p>C语言版本：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">#define N 6</span><br><span class="line"></span><br><span class="line">int partition(int arr[], int low, int high)&#123;</span><br><span class="line">    int key; //key即为基准</span><br><span class="line">    key = arr[low];</span><br><span class="line">    while(low &lt; high)&#123;</span><br><span class="line">        while(low &lt;high &amp;&amp; arr[high] &gt;= key)</span><br><span class="line">            high--;</span><br><span class="line">        if(low&lt;high)</span><br><span class="line">        // 注意是先赋值后移动</span><br><span class="line">            arr[low++] = arr[high];</span><br><span class="line">        while(low &lt;high &amp;&amp; arr[low] &lt;= key)</span><br><span class="line">            low++;</span><br><span class="line">        if(low&lt;high)</span><br><span class="line">            arr[high--] = arr[low];</span><br><span class="line">    &#125;</span><br><span class="line">    arr[low] = key;</span><br><span class="line"></span><br><span class="line">    return low;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void quick_sort(int arr[], int start, int end)&#123;</span><br><span class="line">    int pos;</span><br><span class="line">    if (start&lt;end)&#123;</span><br><span class="line">        pos = partition(arr, start, end);</span><br><span class="line">        quick_sort(arr,start,pos-1);</span><br><span class="line">        quick_sort(arr,pos+1,end);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(void)&#123;</span><br><span class="line">    int i;</span><br><span class="line">    int arr[N]=&#123;32,12,7, 78, 23,45&#125;;</span><br><span class="line"></span><br><span class="line">    printf(&quot;排序前 \n&quot;);</span><br><span class="line">    for(i=0;i&lt;N;i++)</span><br><span class="line">        printf(&quot;%d\t&quot;,arr[i]);</span><br><span class="line">    quick_sort(arr,0,N-1);</span><br><span class="line"></span><br><span class="line">    printf(&quot;\n 排序后 \n&quot;);</span><br><span class="line">    for(i=0; i&lt;N; i++)</span><br><span class="line">        printf(&quot;%d\t&quot;, arr[i]);</span><br><span class="line">    printf (&quot;\n&quot;);</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
 
@@ -400,7 +410,7 @@ Dijkstra’s algorithm is an algorithm for finding the shortest paths between no
       
         <div class="post-tags">
           
-            <a href="/tags/code/" rel="tag">#code</a>
+            <a href="/tags/Sorting-algorithm/" rel="tag">#Sorting algorithm</a>
           
         </div>
       
@@ -409,12 +419,16 @@ Dijkstra’s algorithm is an algorithm for finding the shortest paths between no
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/12/10/【排序算法】之「归并排序」/" rel="next" title="  【排序算法】之「归并排序」">
+                <i class="fa fa-chevron-left"></i>   【排序算法】之「归并排序」
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/05/22/博客上线小记/" rel="prev" title="博客上线小记">
-                博客上线小记 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/12/10/【js游戏】之「五子棋」/" rel="prev" title="【js游戏】 之 「五子棋」">
+                【js游戏】 之 「五子棋」 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -441,8 +455,8 @@ Dijkstra’s algorithm is an algorithm for finding the shortest paths between no
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/05/19/Dijkstra-s-algorithm/"
-           data-title="Dijkstra's algorithm" data-url="http://yoursite.com/2016/05/19/Dijkstra-s-algorithm/">
+      <div class="ds-thread" data-thread-key="2016/12/10/【排序算法】之「快速排序」/"
+           data-title="  【排序算法】之「快速排序」" data-url="http://yoursite.com/2016/12/10/【排序算法】之「快速排序」/">
       </div>
     
   </div>
@@ -585,7 +599,7 @@ Dijkstra’s algorithm is an algorithm for finding the shortest paths between no
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later"><span class="nav-number">1.</span> <span class="nav-text">Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本思想"><span class="nav-number">1.</span> <span class="nav-text">基本思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关性质"><span class="nav-number">2.</span> <span class="nav-text">相关性质</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码实现"><span class="nav-number">3.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
             
           </div>
         </section>
