@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Linux自学系统</title>
+<link rel="stylesheet" type="text/css" href="quiz_files/styles.css" />
+<style type="text/css">
+.demo{width:760px; margin:60px auto 10px auto}
+
+</style>
+<script type="text/javascript" src="http://libs.useso.com/js/jquery/1.7.2/jquery.min.js"></script>
+<script src="quiz_files/quiz.js"></script>
+<script>
+var init={
+
+	'questions':[
+	{'question':'tar命令用于解压的参数是？','answers':['-x','-c','-f','-v'],'correctAnswer':4,'degree':3},
+	{'question':'建立动态路由需要用到的文件有','answers':['/etc/hosts','/etc/gateways','/etc/resolv','/etc/conf'],'correctAnswer':1,'degree':3},
+	{'question':'增加一个用户的命令是什么','answers':['useradd','usermod','groupadd','userdel'],'correctAnswer':1,'degree':1},
+	// {'question':'我希望看最近执行的命令，需要用哪个命令？','answers':['history','ls','ll','list'],'correctAnswer':1,'degree':2},
+	// {'question':'Vsftpd配置本地用户传输速率的参数？','answers':['Local_max_rate','anon','_max_rate','user'],'correctAnswer':1,'degree':3},
+	// {'question':'在使用mkdir命令创建新的目录时，在其父目录不存在时先创建父目录的选项是','answers':['-m','-d','-f','-p'],'correctAnswer':3,'degree':4},
+	// {'question':'linux下查看磁盘挂载状态的命令式？','answers':['rpm','mount','net','statdf'],'correctAnswer':2,'degree':1},
+	// {'question':'以下函数中，和其他函数不属于一类的是____。fwrite','answers':['putc','pwrite','putchar','3'],'correctAnswer':1,'degree':4},
+	// {'question':'进程之间通信都有哪些方式？','answers':['共享内存','消息传递','系统管道','临界区'],'correctAnswer':3,'degree':3},
+	// {'question':'Linux文件权限一共10位长度，从前数第5-7位表示的内容是（）。','answers':['其他用户的权限','文件所有者所在组的权限','文件类型文件','所有者的权限'],'correctAnswer':2,'degree':1},
+	// {'question':'网络服务的daemon是','answers':['netd','http','dinetd','lpd'],'correctAnswer':3,'degree':2},
+	// {'question':'以下哪些命令可以查看当前系统的启动时间（）','answers':['w','top','ps','uptime'],'correctAnswer':4,'degree':2},
+	// {'question':'权限为765的文件，下列哪个是正确的权限位标记（）?','answers':['-rw-rw-r-x','-rw-r-xr-r','-rwxrw-r-x','-rwxr-xrwx'],'correctAnswer':3,'degree':1},
+	// {'question':'shell不仅仅是用户命令解释器，同时一种强大的编程语言，linux缺省的shell是什么','answers':['bash','ruby','PHP','perl'],'correctAnswer':1,'degree':1},
+	// {'question':'终止一个前台进程可能用到的命令和操作是？','answers':['kill','ctrl+C','shut','down'],'correctAnswer':4,'degree':2},
+	// {'question':'设umask为002,','answers':['则新建立的文件的权限是什么？','-rw-rw-r--','rwxrwx-w-','-------w-'],'correctAnswer':4,'degree':1},
+	// {'question':'以下函数中，和其他函数不属于一类的是____。','answers':['strcpy','strncpy','snprintf','strcat'],'correctAnswer':3,'degree':2},
+	// {'question':'以下哪些命令可以获取linux主机的负载相关指标','answers':['top','ls','sar','crontab'],'correctAnswer':1,'degree':2},
+	// {'question':'Linux文件权限一共10位长度，从前数第5-7位表示的内容是（）','answers':['文件所有者所在组的权限','文件类型','文件所有者的权限','其他用户的权限'],'correctAnswer':1,'degree':1},
+	// {'question':'权限为765的文件，下列哪个是正确的权限位标记（）?','answers':['-rw-rw-r-x','-rw-r-xr-r-r','wxrw-r-x','-rwxr-xrwx'],'correctAnswer':3,'degree':2},
+	// {'question':'在Shell环境中的预定义变量中，以下（）用于表示执行上一条命令后的返回状态。','answers':['$!','$?','$$','$0'],'correctAnswer':2,'degree':2},
+	// {'question':'怎样更改一个文件的权限设置？','answers':['chmod','file','attrib','change'],'correctAnswer':1,'degree':3},
+	// {'question':'使用shell时，默认的环境变量放在哪里？','answers':['~/.profile','~/.bash','/etc/profile.d','~/bash'],'correctAnswer':1,'degree':1},
+	// {'question':'在退出unix系统账户之后还需要继续运行某个进程，那么可用（）','answers':['awk','sed','crontab','nohup'],'correctAnswer':4,'degree':3},
+	// {'question':'linux下查看磁盘使用情况的命令是？','answers':['dd','df','top','netstat'],'correctAnswer':2,'degree':1},
+	// {'question':'在Linux中,file.sh文件的权限为-rw-r--r-x,其对应权限用数值形式表示为()','answers':['645','643','775','745'],'correctAnswer':1,'degree':1},
+	// {'question':'当前目录下有a和b两个文件，执行命令“ls>c”，请问文件c里面的内容是什么？','answers':['a','b','ab','abc'],'correctAnswer':4,'degree':2},
+
+	// {'question':'Linux操作系统中，ls命令的作用是？','answers':['查看文件','删除文件','复制文件','以上都不是'],'correctAnswer':1, 'degree':'2'},
+	// {'question':'月亮距离地球多远？','answers':['18万公里','38万公里','100万公里','180万公里'],'correctAnswer':2, 'degree':'4'},
+	// {'question':'国土面积最大的国家是：','answers':['美国','中国','俄罗斯','加拿大'],'correctAnswer':3, 'degree':'1'},
+	
+
+		]
+	};
+
+$(function(){
+	$('#quiz-container').jquizzy({
+        questions: init.questions
+    });
+});
+</script>
+</head>
+
+<body>
+	
+
+
+<div id="main">
+   <h2 class="top_title" style="text-align:center;">Linux自学系统</h2>
+	<div class="demo">
+		<div id='quiz-container'></div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
