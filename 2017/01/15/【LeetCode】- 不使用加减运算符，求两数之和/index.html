@@ -96,9 +96,7 @@
 原题如下：
 
 Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
-Example:Given a = 1 and b = 2, return 3.
-
-题目意思很简单，如标题所述，要想不用加减号(普通运算符">
+Example:Given a = 1 and b = 2, return 3.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="  [LeetCode] - 不使用加减运算符，求两数之和">
 <meta property="og:url" content="http://yoursite.com/2017/01/15/【LeetCode】- 不使用加减运算符，求两数之和/index.html">
@@ -107,19 +105,15 @@ Example:Given a = 1 and b = 2, return 3.
 原题如下：
 
 Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
-Example:Given a = 1 and b = 2, return 3.
-
-题目意思很简单，如标题所述，要想不用加减号(普通运算符">
-<meta property="og:updated_time" content="2017-01-15T15:20:54.000Z">
+Example:Given a = 1 and b = 2, return 3.">
+<meta property="og:updated_time" content="2017-01-15T15:26:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="  [LeetCode] - 不使用加减运算符，求两数之和">
 <meta name="twitter:description" content="今天刷leetCode看到一道题蛮有意思的，做个记录。
 原题如下：
 
 Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.
-Example:Given a = 1 and b = 2, return 3.
-
-题目意思很简单，如标题所述，要想不用加减号(普通运算符">
+Example:Given a = 1 and b = 2, return 3.">
 
 
 
@@ -356,9 +350,8 @@ Example:Given a = 1 and b = 2, return 3.
 <p>原题如下：</p>
 <blockquote>
 <p>Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.</p>
-<p>Example:<br>Given a = 1 and b = 2, return 3.</p>
+<p>Example:<br>Given a = 1 and b = 2, return 3.<br><a id="more"></a><br>题目意思很简单，如标题所述，要想不用加减号(普通运算符)求和，自然联想到位运算，关于位运算相关知识可参考：<a href="http://blog.csdn.net/21aspnet/article/details/7387373" target="_blank" rel="external">http://blog.csdn.net/21aspnet/article/details/7387373</a></p>
 </blockquote>
-<p>题目意思很简单，如标题所述，要想不用加减号(普通运算符)求和，自然联想到位运算，关于位运算相关知识可参考：<a href="http://blog.csdn.net/21aspnet/article/details/7387373" target="_blank" rel="external">http://blog.csdn.net/21aspnet/article/details/7387373</a></p>
 <p>回顾一下二进制加法计算过程：在做某位加法时，单看这一位，若两数相同，则得出0；若不同，则得出1，这不就是位运算当中的异或^嘛！</p>
 <p>知道了这个，怎么处理进位呢？接着看二进制加法，进位特点是：都是往高处（向左）进一位，且只有两个加数都是1时，才会产生进位，这不就是按位与&amp;嘛。将按位与得到的数字向左移动一位，把其当成一个新数字，用新数字与上一步逐位异或得到的数字相加，重复这个过程。实际上就是拆分了每一步进位过程，每一次循环即为一次进位，加到最后，肯定不产生进位了。 即当按位与的结果为0的时候，证明已经没有进位，循环终止，此时得到的sum即为两数的和。</p>
 <p>举个栗子:<br>设有a = 3，b = 6。</p>

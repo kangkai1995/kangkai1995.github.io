@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-15T15:20:54.000Z</updated>
+  <updated>2017-01-15T15:26:53.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,15 +20,14 @@
     <link href="http://yoursite.com/2017/01/15/%E3%80%90LeetCode%E3%80%91-%20%E4%B8%8D%E4%BD%BF%E7%94%A8%E5%8A%A0%E5%87%8F%E8%BF%90%E7%AE%97%E7%AC%A6%EF%BC%8C%E6%B1%82%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/"/>
     <id>http://yoursite.com/2017/01/15/【LeetCode】- 不使用加减运算符，求两数之和/</id>
     <published>2017-01-15T12:46:34.000Z</published>
-    <updated>2017-01-15T15:20:54.000Z</updated>
+    <updated>2017-01-15T15:26:53.000Z</updated>
     
     <content type="html">&lt;p&gt;今天刷leetCode看到一道题蛮有意思的，做个记录。&lt;/p&gt;
 &lt;p&gt;原题如下：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.&lt;/p&gt;
-&lt;p&gt;Example:&lt;br&gt;Given a = 1 and b = 2, return 3.&lt;/p&gt;
+&lt;p&gt;Example:&lt;br&gt;Given a = 1 and b = 2, return 3.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;题目意思很简单，如标题所述，要想不用加减号(普通运算符)求和，自然联想到位运算，关于位运算相关知识可参考：&lt;a href=&quot;http://blog.csdn.net/21aspnet/article/details/7387373&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/21aspnet/article/details/7387373&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;题目意思很简单，如标题所述，要想不用加减号(普通运算符)求和，自然联想到位运算，关于位运算相关知识可参考：&lt;a href=&quot;http://blog.csdn.net/21aspnet/article/details/7387373&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.csdn.net/21aspnet/article/details/7387373&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;回顾一下二进制加法计算过程：在做某位加法时，单看这一位，若两数相同，则得出0；若不同，则得出1，这不就是位运算当中的异或^嘛！&lt;/p&gt;
 &lt;p&gt;知道了这个，怎么处理进位呢？接着看二进制加法，进位特点是：都是往高处（向左）进一位，且只有两个加数都是1时，才会产生进位，这不就是按位与&amp;amp;嘛。将按位与得到的数字向左移动一位，把其当成一个新数字，用新数字与上一步逐位异或得到的数字相加，重复这个过程。实际上就是拆分了每一步进位过程，每一次循环即为一次进位，加到最后，肯定不产生进位了。 即当按位与的结果为0的时候，证明已经没有进位，循环终止，此时得到的sum即为两数的和。&lt;/p&gt;
 &lt;p&gt;举个栗子:&lt;br&gt;设有a = 3，b = 6。&lt;/p&gt;
@@ -58,7 +57,8 @@
       &lt;p&gt;今天刷leetCode看到一道题蛮有意思的，做个记录。&lt;/p&gt;
 &lt;p&gt;原题如下：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Calculate the sum of two integers a and b, but you are not allowed to use th
+&lt;p&gt;Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.&lt;/p&gt;
+&lt;p&gt;Example:&lt;br&gt;Given a = 1 and b = 2, return 3.&lt;br&gt;
     
     </summary>
     
@@ -149,11 +149,11 @@
     <link href="http://yoursite.com/2016/12/10/%E3%80%90%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E3%80%91%E4%B9%8B%E3%80%8C%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E3%80%8D/"/>
     <id>http://yoursite.com/2016/12/10/【排序算法】之「冒泡排序」/</id>
     <published>2016-12-10T12:50:34.000Z</published>
-    <updated>2017-01-15T15:15:15.000Z</updated>
+    <updated>2017-01-15T15:26:44.000Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;冒泡排序&quot;&gt;&lt;a href=&quot;#冒泡排序&quot; class=&quot;headerlink&quot; title=&quot;==- 冒泡排序==&quot;&gt;&lt;/a&gt;==- 冒泡排序==&lt;/h2&gt;&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。&lt;/p&gt;
+    <content type="html">&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。&lt;/p&gt;
 &lt;p&gt;这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。&lt;/p&gt;
-&lt;p&gt;每一轮交换都换产生余下数组最大的数，并冒到顶部。&lt;/p&gt;
+&lt;p&gt;每一轮交换都换产生余下数组最大的数，并冒到顶部。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;相关性质&quot;&gt;&lt;a href=&quot;#相关性质&quot; class=&quot;headerlink&quot; title=&quot;相关性质&quot;&gt;&lt;/a&gt;相关性质&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;时间复杂度：O(N^2)，进行N-1轮操作，每次进行n-1次交换&lt;/li&gt;
 &lt;li&gt;空间复杂度：O(N)&lt;/li&gt;
@@ -167,7 +167,9 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;冒泡排序&quot;&gt;&lt;a href=&quot;#冒泡排序&quot; class=&quot;headerlink&quot; title=&quot;==- 冒泡排序==&quot;&gt;&lt;/a&gt;==- 冒泡排序==&lt;/h2&gt;&lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; titl
+      &lt;h3 id=&quot;基本思想&quot;&gt;&lt;a href=&quot;#基本思想&quot; class=&quot;headerlink&quot; title=&quot;基本思想&quot;&gt;&lt;/a&gt;基本思想&lt;/h3&gt;&lt;p&gt;冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。&lt;/p&gt;
+&lt;p&gt;这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。&lt;/p&gt;
+&lt;p&gt;每一轮交换都换产生余下数组最大的数，并冒到顶部。&lt;br&gt;
     
     </summary>
     

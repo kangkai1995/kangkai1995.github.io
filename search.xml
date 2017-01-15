@@ -10,9 +10,8 @@
 <p>原题如下：</p>
 <blockquote>
 <p>Calculate the sum of two integers a and b, but you are not allowed to use the operator + and -.</p>
-<p>Example:<br>Given a = 1 and b = 2, return 3.</p>
+<p>Example:<br>Given a = 1 and b = 2, return 3.<br><a id="more"></a><br>题目意思很简单，如标题所述，要想不用加减号(普通运算符)求和，自然联想到位运算，关于位运算相关知识可参考：<a href="http://blog.csdn.net/21aspnet/article/details/7387373" target="_blank" rel="external">http://blog.csdn.net/21aspnet/article/details/7387373</a></p>
 </blockquote>
-<p>题目意思很简单，如标题所述，要想不用加减号(普通运算符)求和，自然联想到位运算，关于位运算相关知识可参考：<a href="http://blog.csdn.net/21aspnet/article/details/7387373" target="_blank" rel="external">http://blog.csdn.net/21aspnet/article/details/7387373</a></p>
 <p>回顾一下二进制加法计算过程：在做某位加法时，单看这一位，若两数相同，则得出0；若不同，则得出1，这不就是位运算当中的异或^嘛！</p>
 <p>知道了这个，怎么处理进位呢？接着看二进制加法，进位特点是：都是往高处（向左）进一位，且只有两个加数都是1时，才会产生进位，这不就是按位与&amp;嘛。将按位与得到的数字向左移动一位，把其当成一个新数字，用新数字与上一步逐位异或得到的数字相加，重复这个过程。实际上就是拆分了每一步进位过程，每一次循环即为一次进位，加到最后，肯定不产生进位了。 即当按位与的结果为0的时候，证明已经没有进位，循环终止，此时得到的sum即为两数的和。</p>
 <p>举个栗子:<br>设有a = 3，b = 6。</p>
@@ -83,9 +82,9 @@
     <entry>
       <title><![CDATA[  【排序算法】之「冒泡排序」]]></title>
       <url>http://yoursite.com/2016/12/10/%E3%80%90%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E3%80%91%E4%B9%8B%E3%80%8C%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E3%80%8D/</url>
-      <content type="html"><![CDATA[<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="==- 冒泡排序=="></a>==- 冒泡排序==</h2><h3 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h3><p>冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。</p>
+      <content type="html"><![CDATA[<h3 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h3><p>冒泡重复地走访要排序的数列，一次比较最底下两个元素（即数列最前面两个元素），如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。</p>
 <p>这个算法的名字由来是因为越大的元素会经由交换慢慢“浮”到数列的顶端，故名。</p>
-<p>每一轮交换都换产生余下数组最大的数，并冒到顶部。</p>
+<p>每一轮交换都换产生余下数组最大的数，并冒到顶部。<br><a id="more"></a></p>
 <h3 id="相关性质"><a href="#相关性质" class="headerlink" title="相关性质"></a>相关性质</h3><ol>
 <li>时间复杂度：O(N^2)，进行N-1轮操作，每次进行n-1次交换</li>
 <li>空间复杂度：O(N)</li>
