@@ -80,7 +80,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Kai | Live" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Hey guy!" type="application/atom+xml" />
 
 
 
@@ -94,12 +94,12 @@
 
 <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Kai | Live">
+<meta property="og:title" content="Hey guy!">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Kai | Live">
+<meta property="og:site_name" content="Hey guy!">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kai | Live">
+<meta name="twitter:title" content="Hey guy!">
 <meta name="twitter:description">
 
 
@@ -118,7 +118,7 @@
   };
 </script>
 
-  <title> Kai | Live </title>
+  <title> Hey guy! </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,11 +151,11 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Kai | Live</span>
+      <span class="site-title">Hey guy!</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
-  <p class="site-subtitle">Welcome to my personal blog</p>
+  <p class="site-subtitle">Welcome to kk's blog</p>
 </div>
 
 <div class="site-nav-toggle">
@@ -267,6 +267,219 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/12/【Java】 之 「JVM堆内存和栈内存详解」/" itemprop="url">
+                  【Java】 之 「JVM堆内存和栈内存详解」
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-12T12:27:22+08:00" content="2017-03-12">
+              2017-03-12
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/12/【Java】 之 「JVM堆内存和栈内存详解」/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/12/【Java】 之 「JVM堆内存和栈内存详解」/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>Java把内存分成两种，一种叫做栈内存，一种叫做堆内存</p>
+<p>在函数中定义的一些基本类型的变量和对象的引用变量都是在函数的栈内存中分配。<strong>当在一段代码块中定义一个变量时，java就在栈中为这个变量分配内存空间，当超过变量的作用域后，java会自动释放掉为该变量分配的内存空间，该内存空间可以立刻被另作他用。</strong></p>
+<p><strong>堆内存用于存放由new创建的对象和数组</strong>。在堆中分配的内存，由java虚拟机自动垃圾回收器来管理。在堆中产生了一个数组或者对象后，还可以在栈中定义一个特殊的变量，<strong>这个变量的取值等于数组或者对象在堆内存中的首地址，在栈中的这个特殊的变量就变成了数组或者对象的引用变量</strong>，以后就可以在程序中使用栈内存中的引用变量来访问堆中的数组或者对象，引用变量相当于为数组或者对象起的一个别名，或者代号。 引用变量是普通变量，定义时在栈中分配内存，<strong>引用变量在程序运行到作用域外释放</strong>。而数组＆对象本身在堆中分配，即使程序运行到使用new产生数组和对象的语句所在地代码块之外，数组和对象本身占用的堆内存也不会被释放，<strong>数组和对象在没有引用变量指向它的时候，才变成垃圾，不能再被使用</strong>，但是仍然占着内存，在随后的一个不确定的时间被垃圾回收器释放掉。这个也是java比较占内存的主要原因，实际上，<strong>栈中的变量指向堆内存中的变量，这就是 Java 中的指针!</strong></p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/03/12/【Java】 之 「JVM堆内存和栈内存详解」/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/12/[Database] - 数据库四种隔离级别/" itemprop="url">
+                  [Database] - 数据库四种隔离级别
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-12T11:46:34+08:00" content="2017-03-12">
+              2017-03-12
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/12/[Database] - 数据库四种隔离级别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/12/[Database] - 数据库四种隔离级别/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <ul>
+<li><p>（零）没有并发控制</p>
+<p>  存在的问题：更新遗失。<br>  解决办法就是下面的“可读取未确认”。</p>
+</li>
+<li><p>（一）可读取未确认（Read uncommitted）</p>
+<p>  写事务阻止其他写事务，避免了更新遗失。但是没有阻止其他读事务。<br>  存在的问题：脏读。即读取到不正确的数据，因为另一个事务可能还没提交最终数据，这个读事务就读取了中途的数据，这个数据可能是不正确的。<br>  解决办法就是下面的“可读取确认”。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/03/12/[Database] - 数据库四种隔离级别/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
     
       
 
@@ -1122,225 +1335,13 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/22/博客上线小记/" itemprop="url">
-                  博客上线小记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-22T22:47:12+08:00" content="2016-05-22">
-              2016-05-22
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/22/博客上线小记/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/22/博客上线小记/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p><del>写在前面的屁话</del></p>
-<pre><code>好久没有碰工程项目啦！自从大二在工作室接外包做了几个项目之后，除了课程相关的代码，
-就再也没有实际的写过东西了，这段时间趁着导师内边事情不多，把自己的博客搭起来，也算练练手吧。
-</code></pre><h3 id="为什么要搭建个人博客"><a href="#为什么要搭建个人博客" class="headerlink" title="为什么要搭建个人博客"></a>为什么要搭建个人博客</h3><ul>
-<li><p><strong>记录</strong>：自从高中毕业之后，很少用心写作了（说的好像高中作文也是用心写的一样）。决心利用博客重新开始写作，主要用来记录自己的技术成长路线，偶尔也会用来表达生活感悟。</p>
-</li>
-<li><p><strong>分享</strong>：过去我看过很多的个人博客（几乎是程序猿标配了），却一直没有抽时间搭建属于自己的博客。现在觉得还是得把它建起来，主要为自己记录，最好也能为他人做微不足道的分享。其实一直有想法找个地方写写东西，新浪博客、CSDN、微信公众号都有尝试，还有幸作为知乎专栏内测用户，但是都没有坚持下去，希望这里能够记录更多的内容吧。</p>
-</li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/22/博客上线小记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/05/19/Dijkstra-s-algorithm/" itemprop="url">
-                  Dijkstra's algorithm
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-19T19:13:49+08:00" content="2016-05-19">
-              2016-05-19
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/05/19/Dijkstra-s-algorithm/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/19/Dijkstra-s-algorithm/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <hr>
-<p><strong>Dijkstra’s algorithm</strong></p>
-<h2 id="Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later"><a href="#Dijkstra’s-algorithm-is-an-algorithm-for-finding-the-shortest-paths-between-nodes-in-a-graph-which-may-represent-for-example-road-networks-It-was-conceived-by-computer-scientist-Edsger-W-Dijkstra-in-1956-and-published-three-years-later" class="headerlink" title="Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later."></a>Dijkstra’s algorithm is an algorithm for finding the shortest paths between nodes in a graph, which may represent, for example, road networks. It was conceived by computer scientist Edsger W. Dijkstra in 1956 and published three years later.</h2><p>戴克斯特拉算法（英语：Dijkstra’s algorithm）是由荷兰计算机科学家艾兹赫尔·戴克斯特拉提出。迪科斯彻算法使用了广度优先搜索解决非负权有向图的单源最短路径问题，算法最终得到一个最短路径树。该算法常用于路由算法或者作为其他图算法的一个子模块。举例来说，如果图中的顶点表示城市，而边上的权重表示城市间开车行经的距离，该算法可以用来找到两个城市之间的最短路径。<br>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/05/19/Dijkstra-s-algorithm/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1379,7 +1380,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-count">12</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1389,7 +1390,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -1437,7 +1438,7 @@
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://www.zhihu.com/people/k.kang" target="_blank" title="Zhihu">
+                <a href="https://www.zhihu.com/people/K.Kang/" target="_blank" title="Zhihu">
                   
                     <i class="fa fa-fw fa-globe"></i>
                   
@@ -1456,7 +1457,7 @@
           <div class="links-of-blogroll motion-element links-of-blogroll-inline">
             <div class="links-of-blogroll-title">
               <i class="fa  fa-fw fa-globe"></i>
-              links
+              开了个坑打广告
             </div>
             <ul class="links-of-blogroll-list">
               
