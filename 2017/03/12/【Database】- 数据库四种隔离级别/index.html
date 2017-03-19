@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="hello,kai" />
+  <meta name="keywords" content="Database," />
 
 
 
@@ -92,15 +92,28 @@
 
 
 
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hey guy!">
-<meta property="og:url" content="http://yoursite.com/tags/LeetCode/index.html">
+<meta name="description" content="（零）没有并发控制
+  存在的问题：更新遗失。  解决办法就是下面的“可读取未确认”。
+
+（一）可读取未确认（Read uncommitted）
+  写事务阻止其他写事务，避免了更新遗失。但是没有阻止其他读事务。  存在的问题：脏读。即读取到不正确的数据，因为另一个事务可能还没提交最终数据，这个读事务就读取了中途的数据，这个数据可能是不正确的。  解决办法就是下面的“可读取确认”。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[Database] - 数据库四种隔离级别">
+<meta property="og:url" content="http://yoursite.com/2017/03/12/【Database】- 数据库四种隔离级别/index.html">
 <meta property="og:site_name" content="Hey guy!">
-<meta property="og:description">
+<meta property="og:description" content="（零）没有并发控制
+  存在的问题：更新遗失。  解决办法就是下面的“可读取未确认”。
+
+（一）可读取未确认（Read uncommitted）
+  写事务阻止其他写事务，避免了更新遗失。但是没有阻止其他读事务。  存在的问题：脏读。即读取到不正确的数据，因为另一个事务可能还没提交最终数据，这个读事务就读取了中途的数据，这个数据可能是不正确的。  解决办法就是下面的“可读取确认”。">
+<meta property="og:updated_time" content="2017-03-12T05:52:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hey guy!">
-<meta name="twitter:description">
+<meta name="twitter:title" content="[Database] - 数据库四种隔离级别">
+<meta name="twitter:description" content="（零）没有并发控制
+  存在的问题：更新遗失。  解决办法就是下面的“可读取未确认”。
+
+（一）可读取未确认（Read uncommitted）
+  写事务阻止其他写事务，避免了更新遗失。但是没有阻止其他读事务。  存在的问题：脏读。即读取到不正确的数据，因为另一个事务可能还没提交最终数据，这个读事务就读取了中途的数据，这个数据可能是不正确的。  解决办法就是下面的“可读取确认”。">
 
 
 
@@ -118,7 +131,7 @@
   };
 </script>
 
-  <title> 标签: LeetCode | Hey guy! </title>
+  <title> [Database] - 数据库四种隔离级别 | Hey guy! </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -139,7 +152,7 @@
     
  
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -265,74 +278,164 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        LeetCode
-        <small>标签</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/31/【LeetCode】 - 两道3Sum题目/" itemprop="url">
-              
-                <span itemprop="name">[LeetCode] - 两道3Sum题目</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-01-31T20:46:34+08:00"
-              content="2017-01-31" >
-          01-31
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/15/【LeetCode】- 不使用加减运算符，求两数之和/" itemprop="url">
-              
-                <span itemprop="name">  [LeetCode] - 不使用加减运算符，求两数之和</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-01-15T20:46:34+08:00"
-              content="2017-01-15" >
-          01-15
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </div>
 
   
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                [Database] - 数据库四种隔离级别
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-03-12T11:46:34+08:00" content="2017-03-12">
+              2017-03-12
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2017/03/12/【Database】- 数据库四种隔离级别/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/12/【Database】- 数据库四种隔离级别/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <ul>
+<li><p>（零）没有并发控制</p>
+<p>  存在的问题：更新遗失。<br>  解决办法就是下面的“可读取未确认”。</p>
+</li>
+<li><p>（一）可读取未确认（Read uncommitted）</p>
+<p>  写事务阻止其他写事务，避免了更新遗失。但是没有阻止其他读事务。<br>  存在的问题：脏读。即读取到不正确的数据，因为另一个事务可能还没提交最终数据，这个读事务就读取了中途的数据，这个数据可能是不正确的。<br>  解决办法就是下面的“可读取确认”。</p>
+<a id="more"></a></li>
+<li><p>（二）可读取确认（Read committed）<br>  写事务会阻止其他读写事务。读事务不会阻止其他任何事务。 </p>
+<p>  存在的问题：不可重复读。即在一次事务之间，进行了两次读取，但是结果不一样，可能第一次id为1的人叫“李三”，第二次读id为1的人就叫了“李四”。因为读取操作不会阻止其他事务。<br>解决办法就是下面的“可重复读”。</p>
+</li>
+<li><p>（三）可重复读（Repeatable read）</p>
+<p>  读事务会阻止其他写事务，但是不会阻止其他读事务。<br>  存在的问题：幻读。可重复读阻    止的写事务包括update和delete（只给存在的表加上了锁），但是不包括insert（新行不存在，所以没有办法加锁），所以一个事务第一次读取可能读取到了10条记录，但是第二次可能读取到11条，这就是幻读。<br>  解决办法就是下面的“串行化”。</p>
+</li>
+<li><p>（四）可串行化（Serializable）</p>
+<p>  读加共享锁，写加排他锁。这样读取事务可以并发，但是读写，写写事务之间都是互斥的，基本上就是一个个执行事务，所以叫串行化。</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>少一些套路，多一些真诚~</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="Kai.Kang WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Database/" rel="tag">#Database</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/10/【Java】 之 「demo版租车系统」/" rel="next" title="【Java】 之 「demo版租车系统」">
+                <i class="fa fa-chevron-left"></i> 【Java】 之 「demo版租车系统」
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/12/【Java】 之 「JVM堆内存和栈内存详解」/" rel="prev" title="【Java】 之 「JVM堆内存和栈内存详解」">
+                【Java】 之 「JVM堆内存和栈内存详解」 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -340,6 +443,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/12/【Database】- 数据库四种隔离级别/"
+           data-title="[Database] - 数据库四种隔离级别" data-url="http://yoursite.com/2017/03/12/【Database】- 数据库四种隔离级别/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -359,8 +470,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -462,6 +582,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -565,6 +696,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

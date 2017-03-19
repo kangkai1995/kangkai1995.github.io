@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Database," />
+  <meta name="keywords" content="java," />
 
 
 
@@ -92,28 +92,19 @@
 
 
 
-<meta name="description" content="（零）没有并发控制
-  存在的问题：更新遗失。  解决办法就是下面的“可读取未确认”。
-
-（一）可读取未确认（Read uncommitted）
-  写事务阻止其他写事务，避免了更新遗失。但是没有阻止其他读事务。  存在的问题：脏读。即读取到不正确的数据，因为另一个事务可能还没提交最终数据，这个读事务就读取了中途的数据，这个数据可能是不正确的。  解决办法就是下面的“可读取确认”。">
+<meta name="description" content="static成员是在JVM的CLASSLOADER加载类的时候初始化的，而非static的成员是在创建对象，即new 操作的时候才初始化的；类加载的时候初始化static的成员，此时static 已经分配内存空间，所以可以访问；非static的成员还没有通过new创建对象而进行初始化，所以必然不可以访问。
+简单点说： 静态成员属于类,不需要生成对象就存在了。而非静态需要生成对象才产生，所以静态成员">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[Database] - 数据库四种隔离级别">
-<meta property="og:url" content="http://yoursite.com/2017/03/12/[Database] - 数据库四种隔离级别/index.html">
+<meta property="og:title" content="【java】之「static方法不能直接访问非static成员缘由」">
+<meta property="og:url" content="http://yoursite.com/2017/03/19/【java】之「static方法不能直接访问非static成员缘由」/index.html">
 <meta property="og:site_name" content="Hey guy!">
-<meta property="og:description" content="（零）没有并发控制
-  存在的问题：更新遗失。  解决办法就是下面的“可读取未确认”。
-
-（一）可读取未确认（Read uncommitted）
-  写事务阻止其他写事务，避免了更新遗失。但是没有阻止其他读事务。  存在的问题：脏读。即读取到不正确的数据，因为另一个事务可能还没提交最终数据，这个读事务就读取了中途的数据，这个数据可能是不正确的。  解决办法就是下面的“可读取确认”。">
-<meta property="og:updated_time" content="2017-03-12T05:52:23.000Z">
+<meta property="og:description" content="static成员是在JVM的CLASSLOADER加载类的时候初始化的，而非static的成员是在创建对象，即new 操作的时候才初始化的；类加载的时候初始化static的成员，此时static 已经分配内存空间，所以可以访问；非static的成员还没有通过new创建对象而进行初始化，所以必然不可以访问。
+简单点说： 静态成员属于类,不需要生成对象就存在了。而非静态需要生成对象才产生，所以静态成员">
+<meta property="og:updated_time" content="2017-03-19T08:50:47.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="[Database] - 数据库四种隔离级别">
-<meta name="twitter:description" content="（零）没有并发控制
-  存在的问题：更新遗失。  解决办法就是下面的“可读取未确认”。
-
-（一）可读取未确认（Read uncommitted）
-  写事务阻止其他写事务，避免了更新遗失。但是没有阻止其他读事务。  存在的问题：脏读。即读取到不正确的数据，因为另一个事务可能还没提交最终数据，这个读事务就读取了中途的数据，这个数据可能是不正确的。  解决办法就是下面的“可读取确认”。">
+<meta name="twitter:title" content="【java】之「static方法不能直接访问非static成员缘由」">
+<meta name="twitter:description" content="static成员是在JVM的CLASSLOADER加载类的时候初始化的，而非static的成员是在创建对象，即new 操作的时候才初始化的；类加载的时候初始化static的成员，此时static 已经分配内存空间，所以可以访问；非static的成员还没有通过new创建对象而进行初始化，所以必然不可以访问。
+简单点说： 静态成员属于类,不需要生成对象就存在了。而非静态需要生成对象才产生，所以静态成员">
 
 
 
@@ -131,7 +122,7 @@
   };
 </script>
 
-  <title> [Database] - 数据库四种隔离级别 | Hey guy! </title>
+  <title> 【java】之「static方法不能直接访问非static成员缘由」 | Hey guy! </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -299,7 +290,7 @@
             
             
               
-                [Database] - 数据库四种隔离级别
+                【java】之「static方法不能直接访问非static成员缘由」
               
             
           </h1>
@@ -311,8 +302,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-03-12T11:46:34+08:00" content="2017-03-12">
-              2017-03-12
+            <time itemprop="dateCreated" datetime="2017-03-19T10:19:22+08:00" content="2017-03-19">
+              2017-03-19
             </time>
           </span>
 
@@ -322,8 +313,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/03/12/[Database] - 数据库四种隔离级别/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/12/[Database] - 数据库四种隔离级别/" itemprop="commentsCount"></span>
+                <a href="/2017/03/19/【java】之「static方法不能直接访问非static成员缘由」/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/19/【java】之「static方法不能直接访问非static成员缘由」/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -346,23 +337,27 @@
       
 
       
-        <ul>
-<li><p>（零）没有并发控制</p>
-<p>  存在的问题：更新遗失。<br>  解决办法就是下面的“可读取未确认”。</p>
+        <p>static成员是在JVM的CLASSLOADER加载类的时候初始化的，而非static的成员是在创建对象，即new 操作的时候才初始化的；类加载的时候初始化static的成员，此时static 已经分配内存空间，所以可以访问；非static的成员还没有通过new创建对象而进行初始化，所以必然不可以访问。</p>
+<p>简单点说： <strong>静态成员属于类,不需要生成对象就存在了。而非静态需要生成对象才产生，所以静态成员不能直接访问。 </strong></p>
+<a id="more"></a>
+<h3 id="下面说说静态的特点："><a href="#下面说说静态的特点：" class="headerlink" title="下面说说静态的特点："></a>下面说说静态的特点：</h3><p>1.随着类的加载而加载——静态会随着类的消失而消失，说明静态的生命周期最长<br> 2.优先于对象的存在——静态是先存在的，对象是后存在的<br> 3.被所有对象共享<br>4.可以直接被类名所调用<br>静态的使用注意事项：</p>
+<ol>
+<li><p>静态方法只能访问静态成员（包括成员变量和成员方法） 非静态方法可以访问静态也可以访问非静态</p>
 </li>
-<li><p>（一）可读取未确认（Read uncommitted）</p>
-<p>  写事务阻止其他写事务，避免了更新遗失。但是没有阻止其他读事务。<br>  存在的问题：脏读。即读取到不正确的数据，因为另一个事务可能还没提交最终数据，这个读事务就读取了中途的数据，这个数据可能是不正确的。<br>  解决办法就是下面的“可读取确认”。</p>
-<a id="more"></a></li>
-<li><p>（二）可读取确认（Read committed）<br>  写事务会阻止其他读写事务。读事务不会阻止其他任何事务。 </p>
-<p>  存在的问题：不可重复读。即在一次事务之间，进行了两次读取，但是结果不一样，可能第一次id为1的人叫“李三”，第二次读id为1的人就叫了“李四”。因为读取操作不会阻止其他事务。<br>解决办法就是下面的“可重复读”。</p>
+<li><p>静态方法中不可以定义this，super关键字 因为 一个类中，一个static变量只会有一个内存空间，虽然有多个类实例，但这些类实例中的这个static变量会共享同一个内存空间。静态方法在优先于对象存在，所以静态方法中不可以出现this，super关键字。</p>
 </li>
-<li><p>（三）可重复读（Repeatable read）</p>
-<p>  读事务会阻止其他写事务，但是不会阻止其他读事务。<br>  存在的问题：幻读。可重复读阻    止的写事务包括update和delete（只给存在的表加上了锁），但是不包括insert（新行不存在，所以没有办法加锁），所以一个事务第一次读取可能读取到了10条记录，但是第二次可能读取到11条，这就是幻读。<br>  解决办法就是下面的“串行化”。</p>
+<li><p>主函数是静态的。</p>
 </li>
-<li><p>（四）可串行化（Serializable）</p>
-<p>  读加共享锁，写加排他锁。这样读取事务可以并发，但是读写，写写事务之间都是互斥的，基本上就是一个个执行事务，所以叫串行化。</p>
+</ol>
+<h3 id="静态的利弊："><a href="#静态的利弊：" class="headerlink" title="静态的利弊："></a>静态的利弊：</h3><p>利：对对象的共享数据进行单独空间的存储，节省空间，没有必要每一个对象中都存储一份，可以直接被类名所调用</p>
+<p>弊：生命周期过长，访问出现局限性（只能访问静态）</p>
+<p>实例变量和类变量（static声明的变量）的区别：</p>
+<ol>
+<li><p>存放位置 ：类变量随着类的加载存在于方法区中，实例变量随着对象的建立存在于堆内存里</p>
 </li>
-</ul>
+<li><p>生命周期 ：类变量生命周期最长，随着“类”的加载而加载，随着类的消失而消失 实例变量随着“对象”的消失而消失</p>
+</li>
+</ol>
 
       
     </div>
@@ -400,7 +395,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Database/" rel="tag">#Database</a>
+            <a href="/tags/java/" rel="tag">#java</a>
           
         </div>
       
@@ -409,16 +404,16 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/10/【Java】 之 「demo版租车系统」/" rel="next" title="【Java】 之 「demo版租车系统」">
-                <i class="fa fa-chevron-left"></i> 【Java】 之 「demo版租车系统」
+              <a href="/2017/03/18/【java】之「线程的状态」/" rel="next" title="【java】之「线程的状态」">
+                <i class="fa fa-chevron-left"></i> 【java】之「线程的状态」
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/03/12/【Java】 之 「JVM堆内存和栈内存详解」/" rel="prev" title="【Java】 之 「JVM堆内存和栈内存详解」">
-                【Java】 之 「JVM堆内存和栈内存详解」 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/03/19/【java】之「synchronized同步方法」/" rel="prev" title="【java】之「synchronized同步方法」">
+                【java】之「synchronized同步方法」 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -445,8 +440,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/03/12/[Database] - 数据库四种隔离级别/"
-           data-title="[Database] - 数据库四种隔离级别" data-url="http://yoursite.com/2017/03/12/[Database] - 数据库四种隔离级别/">
+      <div class="ds-thread" data-thread-key="2017/03/19/【java】之「static方法不能直接访问非static成员缘由」/"
+           data-title="【java】之「static方法不能直接访问非static成员缘由」" data-url="http://yoursite.com/2017/03/19/【java】之「static方法不能直接访问非static成员缘由」/">
       </div>
     
   </div>
@@ -491,7 +486,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">16</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -589,7 +584,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#下面说说静态的特点："><span class="nav-number">1.</span> <span class="nav-text">下面说说静态的特点：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#静态的利弊："><span class="nav-number">2.</span> <span class="nav-text">静态的利弊：</span></a></li></ol></div>
             
           </div>
         </section>
