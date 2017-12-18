@@ -1,0 +1,238 @@
+id,value,color
+America,,
+America.California,,
+America.California.California Institue of Technology,,
+America.California.California Institue of Technology.Teaching,90.3,#2E2575
+America.California.California Institue of Technology.Research,97.5,#E54F24
+America.California.California Institue of Technology.Citations,99.5,#FF9900
+America.California.California Institue of Technology.Industry income,92.6,#563B7E
+America.California.California Institue of Technology.International outlook,59.7,#808080
+America.California.Stanford University,,
+America.California.Stanford University.Teaching,89.1,#2E2575
+America.California.Stanford University.Research,96.7,#E54F24
+America.California.Stanford University.Citations,99.9,#FF9900
+America.California.Stanford University.Industry income,60.5,#563B7E
+America.California.Stanford University.International outlook,77.6,#808080
+"America.California.University of California,Los Angeles",,
+"America.California.University of California,Los Angeles.Teaching",80.7,#2E2575
+"America.California.University of California,Los Angeles.Research",88.1,#E54F24
+"America.California.University of California,Los Angeles.Citations",97.9,#FF9900
+"America.California.University of California,Los Angeles.Industry income",48.6,#563B7E
+"America.California.University of California,Los Angeles.International outlook",59.5,#808080
+"America.California.University of California,Berkeley",,
+"America.California.University of California,Berkeley.Teaching",77.4,#2E2575
+"America.California.University of California,Berkeley.Research",84.5,#E54F24
+"America.California.University of California,Berkeley.Citations",99.8,#FF9900
+"America.California.University of California,Berkeley.Industry income",37.5,#563B7E
+"America.California.University of California,Berkeley.International outlook",64.5,#808080
+"America.California.Unicersity of California,San Diego",,
+"America.California.Unicersity of California,San Diego.Teaching",62.9,#2E2575
+"America.California.Unicersity of California,San Diego.Research",79.8,#E54F24
+"America.California.Unicersity of California,San Diego.Citations",98.6,#FF9900
+"America.California.Unicersity of California,San Diego.Industry income",96.5,#563B7E
+"America.California.Unicersity of California,San Diego.International outlook",51.9,#808080
+"America.California.University of California,Santa Barbara",,
+"America.California.University of California,Santa Barbara.Teaching",50,#2E2575
+"America.California.University of California,Santa Barbara.Research",61.5,#E54F24
+"America.California.University of California,Santa Barbara.Citations",98.8,#FF9900
+"America.California.University of California,Santa Barbara.Industry income",82,#563B7E
+"America.California.University of California,Santa Barbara.International outlook",65.4,#808080
+"America.California.University of California,Davis",,
+"America.California.University of California,Davis.Teaching",60.9,#2E2575
+"America.California.University of California,Davis.Research",64.5,#E54F24
+"America.California.University of California,Davis.Citations",86,#FF9900
+"America.California.University of California,Davis.Industry income",53.4,#563B7E
+"America.California.University of California,Davis.International outlook",63.7,#808080
+"America.California.University of California,Irvine",,
+"America.California.University of California,Irvine.Teaching",43.4,#2E2575
+"America.California.University of California,Irvine.Research",44.9,#E54F24
+"America.California.University of California,Irvine.Citations",93.6,#FF9900
+"America.California.University of California,Irvine.Industry income",43.9,#563B7E
+"America.California.University of California,Irvine.International outlook",65.2,#808080
+America.Massachusetts,,
+America.Massachusetts.Massachusetts Institute of Technology,,
+America.Massachusetts.Massachusetts Institute of Technology.Teaching,87.3,#2E2575
+America.Massachusetts.Massachusetts Institute of Technology.Research,91.9,#E54F24
+America.Massachusetts.Massachusetts Institute of Technology.Citations,100,#FF9900
+America.Massachusetts.Massachusetts Institute of Technology.Industry income,88.4,#563B7E
+America.Massachusetts.Massachusetts Institute of Technology.International outlook,87.6,#808080
+America.Massachusetts.Harvard University,,
+America.Massachusetts.Harvard University.Teaching,84.2,#2E2575
+America.Massachusetts.Harvard University.Research,98.4,#E54F24
+America.Massachusetts.Harvard University.Citations,99.7,#FF9900
+America.Massachusetts.Harvard University.Industry income,46.4,#563B7E
+America.Massachusetts.Harvard University.International outlook,79.7,#808080
+America.Massachusetts.Boston University,,
+America.Massachusetts.Boston University.Teaching,57.1,#2E2575
+America.Massachusetts.Boston University.Research,45.9,#E54F24
+America.Massachusetts.Boston University.Citations,97.2,#FF9900
+America.Massachusetts.Boston University.Industry income,34,#563B7E
+America.Massachusetts.Boston University.iInternational outlook,60,#808080
+America.lllinois,,
+America.lllinois.University of Chicago,,
+America.lllinois.University of Chicago.Teaching,85.3,#2E2575
+America.lllinois.University of Chicago.Research,90.1,#E54F24
+America.lllinois.University of Chicago.Citations,99.4,#FF9900
+America.lllinois.University of Chicago.Industry income,39.8,#563B7E
+America.lllinois.University of Chicago.International outlook,69.6,#808080
+America.lllinois.Northwestern University,,
+America.lllinois.Northwestern University.Teaching,72.6,#2E2575
+America.lllinois.Northwestern University.Research,86.7,#E54F24
+America.lllinois.Northwestern University.Citations,96.9,#FF9900
+America.lllinois.Northwestern University.Industry income,78.2,#563B7E
+America.lllinois.Northwestern University.International outlook,59.2,#808080
+America.lllinois.University of lllinois at Urbana-Champaign,,
+America.lllinois.University of lllinois at Urbana-Champaign.Teaching,65.8,#2E2575
+America.lllinois.University of lllinois at Urbana-Champaign.Research,78.9,#E54F24
+America.lllinois.University of lllinois at Urbana-Champaign.Citations,88.9,#FF9900
+America.lllinois.University of lllinois at Urbana-Champaign.Industry income,56,#563B7E
+America.lllinois.University of lllinois at Urbana-Champaign.International outlook,52.8,#808080
+America.Pennsylvania,,
+America.Pennsylvania.University of Pennsylvania,,
+America.Pennsylvania.University of Pennsylvania.Teaching,83.7,#2E2575
+America.Pennsylvania.University of Pennsylvania.Research,90.1,#E54F24
+America.Pennsylvania.University of Pennsylvania.Citations,98.5,#FF9900
+America.Pennsylvania.University of Pennsylvania.Industry income,56.9,#563B7E
+America.Pennsylvania.University of Pennsylvania.International outlook,61.3,#808080
+America.Pennsylvania.Carnegie Mellon University,,
+America.Pennsylvania.Carnegie Mellon University.Teaching,65.8,#2E2575
+America.Pennsylvania.Carnegie Mellon University.Research,83.7,#E54F24
+America.Pennsylvania.Carnegie Mellon University.Citations,99.7,#FF9900
+America.Pennsylvania.Carnegie Mellon University.Industry income,50.4,#563B7E
+America.Pennsylvania.Carnegie Mellon University.International outlook,79.1,#808080
+America.Pennsylvania.The Pennsylvania State University,,
+America.Pennsylvania.The Pennsylvania State University.Teaching,53.6,#2E2575
+America.Pennsylvania.The Pennsylvania State University.Research,64.8,#E54F24
+America.Pennsylvania.The Pennsylvania State University.Citations,81.6,#FF9900
+America.Pennsylvania.The Pennsylvania State University.Industry income,50,#563B7E
+America.Pennsylvania.The Pennsylvania State University.International outlook,44.3,#808080
+America.Pennsylvania.University of Pittsburgh,,
+America.Pennsylvania.University of Pittsburgh.Teaching,45.7,#2E2575
+America.Pennsylvania.University of Pittsburgh.Research,48.7,#E54F24
+America.Pennsylvania.University of Pittsburgh.Citations,94.9,#FF9900
+America.Pennsylvania.University of Pittsburgh.Industry income,39.9,#563B7E
+America.Pennsylvania.University of Pittsburgh.International outlook,36.8,#808080
+America.Connecticut,,
+America.Connecticut.Yale University,,
+America.Connecticut.Yale University.Teaching,86.7,#2E2575
+America.Connecticut.Yale University.Research,87,#E54F24
+America.Connecticut.Yale University.Citations,98.4,#FF9900
+America.Connecticut.Yale University.Industry income,45.1,#563B7E
+America.Connecticut.Yale University.International outlook,64.6,#808080
+"America.Connecticut.University of Maryland,College Park",,
+"America.Connecticut.University of Maryland,College Park.Teaching",49.6,#2E2575
+"America.Connecticut.University of Maryland,College Park.Research",63,#E54F24
+"America.Connecticut.University of Maryland,College Park.Citations",93.5,#FF9900
+"America.Connecticut.University of Maryland,College Park.Industry income",38.4,#563B7E
+"America.Connecticut.University of Maryland,College Park.International outlook",39,#808080
+America.Washington D.C,,
+America.Washington D.C.The Johns Hopkins University,,
+America.Washington D.C.The Johns Hopkins University.Teaching,76.1,#2E2575
+America.Washington D.C.The Johns Hopkins University.Research,88.1,#E54F24
+America.Washington D.C.The Johns Hopkins University.Citations,98.4,#FF9900
+America.Washington D.C.The Johns Hopkins University.Industry income,95.8,#563B7E
+America.Washington D.C.The Johns Hopkins University.International outlook,70.6,#808080
+America.Washington D.C.University of Washington,,
+America.Washington D.C.University of Washington.Teaching,67.9,#2E2575
+America.Washington D.C.University of Washington.Research,79.9,#E54F24
+America.Washington D.C.University of Washington.Citations,99,#FF9900
+America.Washington D.C.University of Washington.Industry income,47.3,#563B7E
+America.Washington D.C.University of Washington.International outlook,56.5,#808080
+America.Washington D.C.Washiington University in Stlouis,,
+America.Washington D.C.Washiington University in Stlouis.Teaching,60.8,#2E2575
+America.Washington D.C.Washiington University in Stlouis.Research,59.7,#E54F24
+America.Washington D.C.Washiington University in Stlouis.Citations,99.4,#FF9900
+America.Washington D.C.Washiington University in Stlouis.Industry income,36.9,#563B7E
+America.Washington D.C.Washiington University in Stlouis.International outlook,52.1,#808080
+America.City of New York,,
+America.City of New York.Columbia University,,
+America.City of New York.Columbia University.Teaching,82.2,#2E2575
+America.City of New York.Columbia University.Research,83.3,#E54F24
+America.City of New York.Columbia University.Citatioins,98.8,#FF9900
+America.City of New York.Columbia University.Industry income,41.3,#563B7E
+America.City of New York.Columbia University.International outlook,76.6,#808080
+America.City of New York.Cornell University,,
+America.City of New York.Cornell University.Teaching,76.2,#2E2575
+America.City of New York.Cornell University.Research,86.6,#E54F24
+America.City of New York.Cornell University.Citations,97.6,#FF9900
+America.City of New York.Cornell University.Indurstry income,34.6,#563B7E
+America.City of New York.Cornell University.International outlook,69.2,#808080
+America.City of New York.New York University,,
+America.City of New York.New York University.Teaching,73.7,#2E2575
+America.City of New York.New York University.Research,77.4,#E54F24
+America.City of New York.New York University.Citations,96.5,#FF9900
+America.City of New York.New York University.Industry income,37,#563B7E
+America.City of New York.New York University.International outlook,53.4,#808080
+America.North Carolina,,
+America.North Carolina.Duke University,,
+America.North Carolina.Duke University.Teaching,80.7,#2E2575
+America.North Carolina.Duke University.Research,80.6,#E54F24
+America.North Carolina.Duke University.Citations,98.3,#FF9900
+America.North Carolina.Duke University.Industry income,100,#563B7E
+America.North Carolina.Duke University.International outlook,62.5,#808080
+America.North Carolina.University of North Carolina at ChapellHill,,
+America.North Carolina.University of North Carolina at ChapellHill.Teaching,57.9,#2E2575
+America.North Carolina.University of North Carolina at ChapellHill.Research,61.8,#E54F24
+America.North Carolina.University of North Carolina at ChapellHill.Citations,96.7,#FF9900
+America.North Carolina.University of North Carolina at ChapellHill.Industry income,39.2,#563B7E
+America.North Carolina.University of North Carolina at ChapellHill.International outlook,41.5,#808080
+America.North Carolina.Michigan,,
+America.North Carolina.Michigan.University of Michigan,,
+America.North Carolina.Michigan.University of Michigan.Teaching,77.2,#2E2575
+America.North Carolina.Michigan.University of Michigan.Research,86.3,#E54F24
+America.North Carolina.Michigan.University of Michigan.Citations,95.7,#FF9900
+America.North Carolina.Michigan.University of Michigan.Industry income,46.2,#563B7E
+America.North Carolina.Michigan.University of Michigan.International outlook,55.8,#808080
+America.North Carolina.Michigan.Michigan State University,,
+America.North Carolina.Michigan.Michigan State University.Teaching,55.1,#2E2575
+America.North Carolina.Michigan.Michigan State University.Research,53.3,#E54F24
+America.North Carolina.Michigan.Michigan State University.Citations,82.6,#FF9900
+America.North Carolina.Michigan.Michigan State University.Industry income,35.7,#563B7E
+America.North Carolina.Michigan.Michigan State University.International outlook,61.2,#808080
+America.Georgia,,
+America.Georgia.Georgia Institute of Technology,,
+America.Georgia.Georgia Institute of Technology.Teaching,59.7,#2E2575
+America.Georgia.Georgia Institute of Technology.Research,78.9,#E54F24
+America.Georgia.Georgia Institute of Technology.Citations,94.3,#FF9900
+America.Georgia.Georgia Institute of Technology.Industry income,60.2,#563B7E
+America.Georgia.Georgia Institute of Technology.International outlook,75,#808080
+America.Georgia.Emory University,,
+America.Georgia.Emory University.Teaching,47.1,#2E2575
+America.Georgia.Emory University.Research,40.4,#E54F24
+America.Georgia.Emory University.Citations,98.1,#FF9900
+America.Georgia.Emory University.Industry income,42.3,#563B7E
+America.Georgia.Emory University.International outlook,53.3,#808080
+America.Texas,,
+America.Texas.University of Texas at Austin,,
+America.Texas.University of Texas at Austin.Teaching,60.9,#2E2575
+America.Texas.University of Texas at Austin.Research,68.3,#E54F24
+America.Texas.University of Texas at Austin.Citations,95.7,#FF9900
+America.Texas.University of Texas at Austin.Industry income,48.2,#563B7E
+America.Texas.University of Texas at Austin.International outlook,36.7,#808080
+America.Texas.Rice University,,
+America.Texas.Rice University.Teaching,45.1,#2E2575
+America.Texas.Rice University.Research,41.9,#E54F24
+America.Texas.Rice University.Citations,98.7,#FF9900
+America.Texas.Rice University.Industry income,42.4,#563B7E
+America.Texas.Rice University.International outlook,72.7,#808080
+America.Ohio,,
+America.Ohio.Ohio State University,,
+America.Ohio.Ohio State University.Teaching,55.5,#2E2575
+America.Ohio.Ohio State University.Research,56.2,#E54F24
+America.Ohio.Ohio State University.Citations,88,#FF9900
+America.Ohio.Ohio State University.Industry income,52,#563B7E
+America.Ohio.Ohio State University.International outlook,56.4,#808080
+America.New Hampshire,,
+America.New Hampshire.Dartmouth College,,
+America.New Hampshire.Dartmouth College.Teaching,58.5,#2E2575
+America.New Hampshire.Dartmouth College.Research,41.9,#E54F24
+America.New Hampshire.Dartmouth College.Citations,93.4,#FF9900
+America.New Hampshire.Dartmouth College.Industry income,37.9,#563B7E
+America.New Hampshire.Dartmouth College.International outlook,39.1,#808080
+America.Colorado,,
+America.Colorado.University of Colorado Boulder,,
+America.Colorado.University of Colorado Boulder.Teaching,44.8,#2E2575
+America.Colorado.University of Colorado Boulder.Research,45.8,#E54F24
+America.Colorado.University of Colorado Boulder.Citations,97.4,#FF9900
+America.Colorado.University of Colorado Boulder.Industry income,37.5,#563B7E
+America.Colorado.University of Colorado Boulder.International outlook,42.4,#808080
