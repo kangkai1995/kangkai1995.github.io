@@ -1,0 +1,374 @@
+{
+   "took": 492,
+   "timed_out": false,
+   "_shards": {
+      "total": 5,
+      "successful": 3,
+      "failed": 0
+   },
+   "hits": {
+      "total": 30111166,
+      "max_score": 0,
+      "hits": []
+   },
+   "aggregations": {
+      "world_map": {
+         "doc_count_error_upper_bound": 0,
+         "sum_other_doc_count": 0,
+         "buckets": [
+            {
+               "key": "USA",
+               "doc_count":84
+            },
+            {
+               "key": "CAN",
+               "doc_count": 14
+            },
+            {
+               "key": "GBR",
+               "doc_count": 38
+            },
+            {
+               "key": "MOZ",
+               "doc_count": 0
+            },
+            {
+               "key": "TUR",
+               "doc_count": 0
+            },
+            {
+               "key": "KEN",
+               "doc_count": 0
+            },
+            {
+               "key": "BEL",
+               "doc_count": 5
+            },
+            {
+               "key": "FRA",
+               "doc_count": 9
+            },
+            {
+               "key": "NLD",
+               "doc_count": 13
+            },
+            {
+               "key": "ZAF",
+               "doc_count": 2
+            },
+            {
+               "key": "AUS",
+               "doc_count": 16
+            },
+            {
+               "key": "ARG",
+               "doc_count": 0
+            },
+            {
+               "key": "SWE",
+               "doc_count": 9
+            },
+            {
+               "key": "ESP",
+               "doc_count": 3
+            },
+            {
+               "key": "HKG",
+               "doc_count": 6
+            },
+            {
+               "key": "BRA",
+               "doc_count": 1
+            },
+            {
+               "key": "COL",
+               "doc_count": 0
+            },
+            {
+               "key": "DEU",
+               "doc_count": 42
+            },
+            {
+               "key": "MEX",
+               "doc_count": 0
+            },
+            {
+               "key": "TTO",
+               "doc_count": 0
+            },
+            {
+               "key": "CHN",
+               "doc_count": 7
+            },
+            {
+               "key": "CHL",
+               "doc_count": 0
+            },
+            {
+               "key": "KAZ",
+               "doc_count": 0
+            },
+            {
+               "key": "PER",
+               "doc_count": 0
+            },
+            {
+               "key": "IRN",
+               "doc_count": 0
+            },
+            {
+               "key": "BGR",
+               "doc_count": 0
+            },
+            {
+               "key": "POL",
+               "doc_count": 0
+            },
+            {
+               "key": "UKR",
+               "doc_count": 0
+            },
+            {
+               "key": "SGP",
+               "doc_count": 2
+            },
+            {
+               "key": "JPN",
+               "doc_count": 5
+            },
+            {
+               "key": "CZE",
+               "doc_count": 0
+            },
+            {
+               "key": "IND",
+               "doc_count": 1
+            },
+            {
+               "key": "ITA",
+               "doc_count": 5
+            },
+            {
+               "key": "JAM",
+               "doc_count": 0
+            },
+            {
+               "key": "ROU",
+               "doc_count": 0
+            },
+            {
+               "key": "RUS",
+               "doc_count": 2
+            },
+            {
+               "key": "EU",
+               "doc_count": 0
+            },
+            {
+               "key": "SRB",
+               "doc_count": 0
+            },
+            {
+               "key": "ECU",
+               "doc_count": 0
+            },
+            {
+               "key": "ISR",
+               "doc_count": 2
+            },
+            {
+               "key": "KOR",
+               "doc_count": 7
+            },
+            {
+               "key": "ARE",
+               "doc_count": 0
+            },
+            {
+               "key": "NCL",
+               "doc_count": 0
+            },
+            {
+               "key": "PRT",
+               "doc_count": 0
+            },
+            {
+               "key": "GRC",
+               "doc_count": 0
+            },
+            {
+               "key": "URY",
+               "doc_count": 0
+            },
+            {
+               "key": "BLR",
+               "doc_count": 0
+            },
+            {
+               "key": "HUN",
+               "doc_count": 0
+            },
+            {
+               "key": "HRV",
+               "doc_count": 0
+            },
+            {
+               "key": "GTM",
+               "doc_count": 0
+            },
+            {
+               "key": "BOL",
+               "doc_count": 0
+            },
+            {
+               "key": "THA",
+               "doc_count": 0
+            },
+            {
+               "key": "CHE",
+               "doc_count": 7
+            },
+            {
+               "key": "AUT",
+               "doc_count": 3
+            },
+            {
+               "key": "MDA",
+               "doc_count": 0
+            },
+            {
+               "key": "VNM",
+               "doc_count": 0
+            },
+            {
+               "key": "VEN",
+               "doc_count": 0
+            },
+            {
+               "key": "NGA",
+               "doc_count": 0
+            },
+            {
+               "key": "IRL",
+               "doc_count": 0
+            },
+            {
+               "key": "PSE",
+               "doc_count": 0
+            },
+            {
+               "key": "NOR",
+               "doc_count": 3
+            },
+            {
+               "key": "AFG",
+               "doc_count": 0
+            },
+            {
+               "key": "LVA",
+               "doc_count": 0
+            },
+            {
+               "key": "CRI",
+               "doc_count": 0
+            },
+            {
+               "key": "MAR",
+               "doc_count": 0
+            },
+            {
+               "key": "SEN",
+               "doc_count": 0
+            },
+            {
+               "key": "RWA",
+               "doc_count": 0
+            },
+            {
+               "key": "GEO",
+               "doc_count": 0
+            },
+            {
+               "key": "KGZ",
+               "doc_count": 0
+            },
+            {
+               "key": "BWA",
+               "doc_count": 0
+            },
+            {
+               "key": "PHL",
+               "doc_count": 0
+            },
+            {
+               "key": "SDN",
+               "doc_count": 0
+            },
+            {
+               "key": "GLP",
+               "doc_count": 0
+            },
+            {
+               "key": "DOM",
+               "doc_count": 0
+            },
+            {
+               "key": "ALB",
+               "doc_count": 0
+            },
+            {
+               "key": "MNE",
+               "doc_count": 0
+            },
+            {
+               "key": "ARM",
+               "doc_count": 0
+            },
+            {
+               "key": "DNK",
+               "doc_count": 6
+            },
+            {
+               "key": "UZB",
+               "doc_count": 0
+            },
+            {
+               "key": "NZL",
+               "doc_count": 2
+            },
+            {
+               "key": "LBN",
+               "doc_count": 0
+            },
+            {
+               "key": "TUN",
+               "doc_count": 0
+            },
+            {
+               "key": "GHA",
+               "doc_count": 0
+            },
+            {
+               "key": "ZWE",
+               "doc_count": 0
+            },
+            {
+               "key": "DZA",
+               "doc_count": 0
+            },
+            {
+               "key": "JEY",
+               "doc_count": 0
+            },
+            {
+               "key": "TWN",
+               "doc_count": 1
+            },
+            {
+               "key": "GRD",
+               "doc_count": 0
+            }
+         ]
+      }
+   }
+}
